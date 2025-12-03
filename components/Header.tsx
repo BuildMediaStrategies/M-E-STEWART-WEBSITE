@@ -12,7 +12,12 @@ export const Header: React.FC = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-1">
+    <header
+      className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-1"
+      style={{
+        boxShadow: '0 4px 20px rgba(0, 149, 255, 0.6), 0 2px 8px rgba(0, 149, 255, 0.8)'
+      }}
+    >
       <div className="flex items-center justify-between px-4 sm:px-8 lg:px-16">
         {/* Logo */}
         <div className="flex items-center">
