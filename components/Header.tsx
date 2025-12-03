@@ -1,0 +1,105 @@
+import React, { useState, useEffect } from 'react';
+import { Menu, X, HardHat } from 'lucide-react';
+
+export const Header: React.FC = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const navLinks = [
+    { name: 'Home', href: '#' },
+    { name: 'Services', href: '#services' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Contact', href: '#contact' },
+  ];
+
+  return (
+    <header 
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-6'
+      }`}
+    >
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 sm:px-12 lg:px-24">
+        {/* Logo */}
+        <div className="flex items-center gap-2">
+          <HardHat size={32} className={`${isScrolled ? 'text-brand-blue' : 'text-white'}`} />
+          <div className="leading-none">
+            <h1 className={`text-2xl font-bold uppercase tracking-tighter ${isScrolled ? 'text-brand-darkBlue' : 'text-white'}`}>
+              M E Stewart
+            </h1>
+            <p className={`text-[10px] font-bold uppercase tracking-widest ${isScrolled ? 'text-gray-500' : 'text-gray-300'}`}>
+              Contractors
+            </p>
+          </div>
+        </div>
+
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex items-center gap-8">
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className={`text-sm font-bold uppercase tracking-wide transition-colors hover:text-brand-blue ${
+                isScrolled ? 'text-brand-slate' : 'text-white'
+              }`}
+            >
+              {link.name}
+            </a>
+          ))}
+          <a
+            href="#contact"
+            className={`rounded-full px-6 py-2 text-sm font-bold uppercase transition-colors ${
+              isScrolled 
+                ? 'bg-brand-blue text-white hover:bg-brand-darkBlue' 
+                : 'bg-white text-brand-darkBlue hover:bg-gray-100'
+            }`}
+          >
+            Get Quote
+          </a>
+        </nav>
+
+        {/* Mobile Toggle */}
+        <button 
+          className="md:hidden" 
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          {mobileMenuOpen ? (
+            <X className={isScrolled ? 'text-brand-darkBlue' : 'text-white'} />
+          ) : (
+            <Menu className={isScrolled ? 'text-brand-darkBlue' : 'text-white'} />
+          )}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="absolute top-full left-0 w-full bg-white shadow-xl md:hidden flex flex-col items-center py-8 gap-6 animate-fade-in-down">
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-lg font-bold uppercase text-brand-darkBlue hover:text-brand-blue"
+            >
+              {link.name}
+            </a>
+          ))}
+          <a
+             href="#contact"
+             onClick={() => setMobileMenuOpen(false)}
+             className="mt-4 px-8 py-3 bg-brand-blue text-white font-bold uppercase rounded-full"
+           >
+             Get Quote
+           </a>
+        </div>
+      )}
+    </header>
+  );
+};
