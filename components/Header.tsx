@@ -52,6 +52,14 @@ export const Header: React.FC = () => {
           transform: scaleX(1);
           animation: shimmer 1.5s ease-in-out infinite;
         }
+
+        .logo-img {
+          image-rendering: -webkit-optimize-contrast;
+          image-rendering: crisp-edges;
+          backface-visibility: hidden;
+          transform: translateZ(0);
+          -webkit-font-smoothing: antialiased;
+        }
       `}</style>
       <header
         className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-0.5 md:py-1"
@@ -65,7 +73,7 @@ export const Header: React.FC = () => {
           <img
             src="/assets/ChatGPT Image Dec 3, 2025, 06_34_36 PM.png"
             alt="M E Stewart Contractors"
-            className="w-auto h-16 sm:h-20 md:h-28 lg:h-32 object-contain"
+            className="logo-img w-auto h-16 sm:h-20 md:h-28 lg:h-32 object-contain"
           />
         </div>
 
