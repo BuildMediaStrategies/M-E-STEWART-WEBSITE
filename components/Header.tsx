@@ -54,18 +54,18 @@ export const Header: React.FC = () => {
         }
       `}</style>
       <header
-        className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-1"
+        className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-0.5 md:py-1"
         style={{
           boxShadow: '0 4px 20px rgba(0, 149, 255, 0.6), 0 2px 8px rgba(0, 149, 255, 0.8)'
         }}
       >
-      <div className="flex items-center justify-between px-4 sm:px-8 lg:px-16">
+      <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16">
         {/* Logo */}
         <div className="flex items-center">
           <img
             src="/assets/ChatGPT Image Dec 3, 2025, 06_34_36 PM.png"
             alt="M E Stewart Contractors"
-            className="w-auto h-32 object-contain"
+            className="w-auto h-16 sm:h-20 md:h-28 lg:h-32 object-contain"
           />
         </div>
 
@@ -94,9 +94,9 @@ export const Header: React.FC = () => {
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? (
-            <X className="text-brand-darkBlue" />
+            <X className="text-brand-darkBlue w-5 h-5 sm:w-6 sm:h-6" />
           ) : (
-            <Menu className="text-brand-darkBlue" />
+            <Menu className="text-brand-darkBlue w-5 h-5 sm:w-6 sm:h-6" />
           )}
         </button>
       </div>
