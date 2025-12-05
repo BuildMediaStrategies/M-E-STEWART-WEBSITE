@@ -67,16 +67,17 @@ export const Header: React.FC = () => {
       <header
         className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md"
         style={{
-          boxShadow: '0 4px 20px rgba(0, 149, 255, 0.6), 0 2px 8px rgba(0, 149, 255, 0.8)'
+          boxShadow: '0 4px 20px rgba(0, 149, 255, 0.6), 0 2px 8px rgba(0, 149, 255, 0.8)',
+          height: '80px'
         }}
       >
-      <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16">
+      <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16 h-full">
         {/* Logo */}
-        <Link to="/" className="flex items-center">
+        <Link to="/" className="flex items-center" style={{ marginTop: '-20px', marginBottom: '-20px' }}>
           <img
             src="/assets/logo.png"
             alt="M E Stewart Contractors"
-            className="logo-img w-auto h-20 sm:h-24 md:h-36 lg:h-40 object-contain"
+            className="logo-img w-auto h-28 sm:h-32 md:h-48 lg:h-56 object-contain"
           />
         </Link>
 
