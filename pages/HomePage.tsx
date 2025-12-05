@@ -3,6 +3,7 @@ import { Hero } from '../components/Hero';
 import { Services } from '../components/Services';
 import { Portfolio } from '../components/Portfolio';
 import { Contact } from '../components/Contact';
+import { FAQPreview } from '../components/FAQPreview';
 
 export const HomePage: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ export const HomePage: React.FC = () => {
       <Hero />
       <Portfolio />
       <Services />
+      <FAQPreview />
       <Contact />
     </div>
   );
