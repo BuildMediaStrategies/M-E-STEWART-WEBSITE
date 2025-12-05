@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ChevronRight, MapPin } from 'lucide-react';
 
 export const Hero: React.FC = () => {
@@ -37,19 +38,19 @@ export const Hero: React.FC = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <a 
-              href="#contact" 
+            <Link
+              to="/contact"
               className="group flex items-center justify-center gap-2 bg-brand-blue px-8 py-4 text-lg font-bold uppercase tracking-wide text-white transition-all hover:bg-white hover:text-brand-blue rounded-full shadow-lg hover:shadow-xl"
             >
               Get a Quote
               <ChevronRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </a>
-            <a 
-              href="#projects" 
+            </Link>
+            <Link
+              to="/projects"
               className="flex items-center justify-center gap-2 border-2 border-white px-8 py-4 text-lg font-bold uppercase tracking-wide text-white transition-all hover:bg-white hover:text-brand-darkBlue rounded-full hover:shadow-lg"
             >
               View Portfolio
-            </a>
+            </Link>
           </div>
         </div>
       </div>

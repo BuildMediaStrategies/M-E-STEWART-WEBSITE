@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'Services', href: '#services' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Services', href: '/services' },
+    { name: 'Projects', href: '/projects' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -69,31 +71,31 @@ export const Header: React.FC = () => {
       >
       <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16">
         {/* Logo */}
-        <div className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img
             src="/assets/logo.png"
             alt="M E Stewart Contractors"
             className="logo-img w-auto h-16 sm:h-20 md:h-28 lg:h-32 object-contain"
           />
-        </div>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               className="nav-link text-sm font-bold uppercase tracking-wide transition-colors text-brand-slate hover:text-brand-blue"
             >
               {link.name}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="rounded-full px-6 py-2 text-sm font-bold uppercase transition-colors bg-brand-blue text-white hover:bg-brand-darkBlue"
           >
             Get Quote
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile Toggle */}
@@ -113,22 +115,22 @@ export const Header: React.FC = () => {
       {mobileMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-xl md:hidden flex flex-col items-center py-8 gap-6 animate-fade-in-down">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               onClick={() => setMobileMenuOpen(false)}
               className="nav-link text-lg font-bold uppercase text-brand-darkBlue hover:text-brand-blue"
             >
               {link.name}
-            </a>
+            </Link>
           ))}
-          <a
-             href="#contact"
+          <Link
+             to="/contact"
              onClick={() => setMobileMenuOpen(false)}
              className="mt-4 px-8 py-3 bg-brand-blue text-white font-bold uppercase rounded-full"
            >
              Get Quote
-           </a>
+           </Link>
         </div>
       )}
     </header>

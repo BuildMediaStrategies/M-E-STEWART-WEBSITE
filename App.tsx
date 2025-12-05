@@ -1,23 +1,30 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { Services } from './components/Services';
-import { Portfolio } from './components/Portfolio';
-import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { HomePage } from './pages/HomePage';
+import { ServicesPage } from './pages/ServicesPage';
+import { ProjectsPage } from './pages/ProjectsPage';
+import { ContactPage } from './pages/ContactPage';
+import { AboutPage } from './pages/AboutPage';
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-50 text-brand-slate font-body">
-      <Header />
-      <main>
-        <Hero />
-        <Portfolio />
-        <Services />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-slate-50 text-brand-slate font-body">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/about" element={<AboutPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
