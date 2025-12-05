@@ -10,6 +10,7 @@ import { AboutPage } from './pages/AboutPage';
 import { AreasPage } from './pages/AreasPage';
 import { PartnershipsPage } from './pages/PartnershipsPage';
 import { WhyChoosePage } from './pages/WhyChoosePage';
+import { TestimonialsPage } from './pages/TestimonialsPage';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/areas" element={<AreasPage />} />
             <Route path="/partnerships" element={<PartnershipsPage />} />
             <Route path="/why-choose-us" element={<WhyChoosePage />} />
+            <Route path="/testimonials" element={<TestimonialsPage />} />
           </Routes>
         </main>
         <Footer />
