@@ -4,39 +4,103 @@ import { Hammer, Home, Ruler, HardHat, Building, PaintBucket, CheckCircle, Clock
 const services = [
   {
     icon: Home,
-    title: "New Builds",
-    description: "Complete project management from foundation to finish. We build dream homes with uncompromising quality.",
-    features: ["Custom design consultation", "Full project management", "Quality materials sourcing", "Building regulations compliance"]
+    title: "General Building",
+    description: "Comprehensive building services for all types of construction projects with expert craftsmanship and attention to detail."
   },
   {
     icon: Hammer,
-    title: "Renovations",
-    description: "Breathing new life into existing structures. Modern updates, structural repairs, and complete overhauls.",
-    features: ["Period property expertise", "Modern system integration", "Structural assessments", "Interior redesign"]
-  },
-  {
-    icon: Ruler,
-    title: "Extensions",
-    description: "Expand your living space seamlessly. Single-story, double-story, and wrap-around extensions.",
-    features: ["Planning permission support", "Seamless integration", "Kitchen & living extensions", "Multi-story additions"]
-  },
-  {
-    icon: HardHat,
-    title: "Commercial",
-    description: "Industrial and retail fit-outs. Durable construction designed for business needs and safety standards.",
-    features: ["Office fit-outs", "Retail spaces", "Industrial units", "Health & safety compliance"]
+    title: "Fire and Flood Renovation",
+    description: "Specialist restoration services to repair and restore properties damaged by fire or flood, returning them to their former glory."
   },
   {
     icon: Building,
     title: "Loft Conversions",
-    description: "Unlock the potential of your attic. Creating master suites, offices, and additional bedrooms.",
-    features: ["Dormer conversions", "Velux installations", "En-suite additions", "Storage solutions"]
+    description: "Unlock the potential of your attic. Creating master suites, offices, and additional bedrooms with expert design."
+  },
+  {
+    icon: HardHat,
+    title: "Project Management",
+    description: "Complete project oversight from planning to completion, ensuring your build stays on time, on budget, and to specification."
+  },
+  {
+    icon: Home,
+    title: "Sustainable Construction",
+    description: "Eco-friendly building solutions using sustainable materials and energy-efficient designs for a greener future."
+  },
+  {
+    icon: Building,
+    title: "Workshop Design / Construction",
+    description: "Custom-built workshops tailored to your specific needs, from hobbyist spaces to professional working environments."
+  },
+  {
+    icon: HardHat,
+    title: "Foundations",
+    description: "Expert foundation work ensuring solid, stable bases for all construction projects with proper groundwork and drainage."
+  },
+  {
+    icon: Shield,
+    title: "Insurance Claim Specialist",
+    description: "Experienced in handling insurance-related repairs and renovations, working directly with insurers for seamless claims."
+  },
+  {
+    icon: Ruler,
+    title: "Structural Design",
+    description: "Professional structural engineering and design services to ensure safety, compliance, and optimal building performance."
+  },
+  {
+    icon: Hammer,
+    title: "Demolition",
+    description: "Safe and efficient demolition services for full or partial building removal, including site clearance and waste disposal."
+  },
+  {
+    icon: Home,
+    title: "New Builds",
+    description: "Complete project management from foundation to finish. We build dream homes with uncompromising quality and craftsmanship."
+  },
+  {
+    icon: Ruler,
+    title: "Extensions / Conversions",
+    description: "Expand your living space seamlessly with single-story, double-story, and garage conversions that blend perfectly with existing structures."
+  },
+  {
+    icon: Building,
+    title: "Period Property Restoration",
+    description: "Specialist restoration of period and heritage properties, preserving character while integrating modern comforts."
   },
   {
     icon: PaintBucket,
-    title: "Design & Plan",
-    description: "Collaborative architectural planning and design services to ensure your vision is viable.",
-    features: ["3D visualization", "Architectural drawings", "Budget planning", "Material selection"]
+    title: "Refurbishments",
+    description: "Complete property refurbishment services, modernizing interiors and exteriors while maintaining structural integrity."
+  },
+  {
+    icon: Hammer,
+    title: "Property Maintenance / Repair",
+    description: "Ongoing maintenance and repair services to keep your property in excellent condition year-round."
+  },
+  {
+    icon: Building,
+    title: "Garage Conversions",
+    description: "Transform unused garage space into functional living areas, home offices, gyms, or additional bedrooms."
+  },
+  {
+    icon: Award,
+    title: "Heritage Property Specialist",
+    description: "Expert conservation and restoration of listed and heritage buildings, respecting historical significance and regulations."
+  },
+  {
+    icon: HardHat,
+    title: "Structural Steels",
+    description: "Installation of structural steel beams and supports for load-bearing alterations, extensions, and new builds."
+  },
+  {
+    icon: Home,
+    title: "Garden Studios",
+    description: "Beautiful garden studio constructions for home offices, art studios, gyms, or guest accommodations."
+  },
+  {
+    icon: Clock,
+    title: "Emergency Builder Service",
+    description: "24/7 emergency building services for urgent repairs, storm damage, and structural issues requiring immediate attention."
   }
 ];
 
@@ -145,7 +209,7 @@ export const ServicesPage: React.FC = () => {
 
       <section className="py-20 px-6 sm:px-12 lg:px-24 bg-white">
         <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -163,17 +227,9 @@ export const ServicesPage: React.FC = () => {
                 <h3 className="mb-4 text-2xl font-bold uppercase text-brand-darkBlue">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-gray-600 leading-relaxed">
                   {service.description}
                 </p>
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start text-sm text-gray-700">
-                      <CheckCircle size={16} className="text-brand-blue mr-2 mt-0.5 flex-shrink-0" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
             ))}
           </div>
