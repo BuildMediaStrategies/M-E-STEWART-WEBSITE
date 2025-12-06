@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react';
 
 export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState<string | null>(null);
 
   const navLinks = [
     { name: 'Home', href: '/' },
@@ -17,18 +18,21 @@ export const Header: React.FC = () => {
   return (
     <>
       <style>{`
-        @keyframes shimmer {
+        @keyframes underlineSlide {
           0% {
             transform: scaleX(0);
-            opacity: 0.5;
-          }
-          50% {
-            opacity: 1;
-            box-shadow: 0 0 10px rgba(0, 149, 255, 0.8);
           }
           100% {
             transform: scaleX(1);
-            opacity: 0.8;
+          }
+        }
+
+        @keyframes shimmer {
+          0% {
+            background-position: 200% 0;
+          }
+          100% {
+            background-position: -200% 0;
           }
         }
 
@@ -48,13 +52,12 @@ export const Header: React.FC = () => {
           background-size: 200% 100%;
           transform: scaleX(0);
           transform-origin: left;
-          transition: transform 0.3s ease;
         }
 
         @media (min-width: 1024px) {
-          .nav-link:hover::after {
+          .nav-link.active::after {
+            animation: underlineSlide 0.4s ease-out forwards, shimmer 1s ease-in-out 0.4s 1;
             transform: scaleX(1);
-            animation: shimmer 1.5s ease-in-out infinite;
           }
         }
 
@@ -89,7 +92,10 @@ export const Header: React.FC = () => {
             <Link
               key={link.name}
               to={link.href}
-              className="nav-link text-sm font-bold uppercase tracking-wide transition-colors text-brand-slate hover:text-brand-blue"
+              onMouseEnter={() => setActiveLink(link.name)}
+              className={`nav-link text-sm font-bold uppercase tracking-wide transition-colors text-brand-slate hover:text-brand-blue ${
+                activeLink === link.name ? 'active' : ''
+              }`}
             >
               {link.name}
             </Link>
