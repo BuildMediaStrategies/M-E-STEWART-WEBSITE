@@ -52,6 +52,7 @@ export const Header: React.FC = () => {
           background-size: 200% 100%;
           transform: scaleX(0);
           transform-origin: left;
+          transition: transform 0.3s ease;
         }
 
         @media (min-width: 1024px) {
@@ -87,7 +88,7 @@ export const Header: React.FC = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8" onMouseLeave={() => setActiveLink(null)}>
           {navLinks.map((link) => (
             <Link
               key={link.name}
