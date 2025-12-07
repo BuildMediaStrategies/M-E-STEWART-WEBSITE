@@ -21,7 +21,7 @@ const projects: Project[] = [
   {
     title: "Staircase Renovation - Before & After",
     location: "Kent",
-    beforeImg: "/assets/image copy.png",
+    beforeImg: "/assets/image copy copy copy.png",
     afterImg: "/assets/image copy copy.png",
     description: "Complete staircase transformation from raw construction to elegant finished design. Features custom white painted posts, dark carpeted treads, and modern glass balustrades creating a sophisticated interior space.",
     isBeforeAfter: true
@@ -126,25 +126,19 @@ export const ProjectsPage: React.FC = () => {
                 <div className={`${isEven ? 'lg:order-2' : 'lg:order-1'} order-1`}>
                   {project.beforeImg && project.afterImg ? (
                     <div className="grid grid-cols-2 gap-4">
-                      <div className="relative">
+                      <div>
                         <img
                           src={project.beforeImg}
                           alt={`${project.title} - Before`}
                           className="enhanced-image w-full h-[350px] sm:h-[425px] md:h-[550px] lg:h-[550px] object-cover rounded-lg shadow-lg"
                         />
-                        <div className="absolute top-4 left-4 bg-brand-darkBlue text-white px-4 py-2 rounded-full font-bold uppercase text-sm">
-                          Before
-                        </div>
                       </div>
-                      <div className="relative">
+                      <div>
                         <img
                           src={project.afterImg}
                           alt={`${project.title} - After`}
                           className="enhanced-image w-full h-[350px] sm:h-[425px] md:h-[550px] lg:h-[550px] object-cover rounded-lg shadow-lg"
                         />
-                        <div className="absolute top-4 left-4 bg-brand-blue text-white px-4 py-2 rounded-full font-bold uppercase text-sm">
-                          After
-                        </div>
                       </div>
                     </div>
                   ) : (
