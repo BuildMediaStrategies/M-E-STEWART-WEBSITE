@@ -14,7 +14,8 @@ const projects: Project[] = [
   {
     title: "Kitchen Renovation - Before & After",
     location: "Kent",
-    img: "/assets/kitchen-before-after.png",
+    beforeImg: "/assets/kitchen-before.png",
+    afterImg: "/assets/kitchen-after.png",
     description: "Complete kitchen transformation featuring modern tile work, custom cabinetry, premium lighting, and high-quality finishes. A stunning example of our attention to detail and craftsmanship.",
     isBeforeAfter: true
   },
