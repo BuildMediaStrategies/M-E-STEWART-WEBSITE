@@ -4,8 +4,10 @@ type Project = {
   title: string;
   location: string;
   description: string;
-  img: string;
+  img?: string;
   isBeforeAfter?: boolean;
+  beforeImg?: string;
+  afterImg?: string;
 };
 
 const projects: Project[] = [
@@ -14,6 +16,14 @@ const projects: Project[] = [
     location: "Kent",
     img: "/assets/kitchen-before-after.png",
     description: "Complete kitchen transformation featuring modern tile work, custom cabinetry, premium lighting, and high-quality finishes. A stunning example of our attention to detail and craftsmanship.",
+    isBeforeAfter: true
+  },
+  {
+    title: "Staircase Renovation - Before & After",
+    location: "Kent",
+    beforeImg: "/assets/image copy.png",
+    afterImg: "/assets/image copy copy.png",
+    description: "Complete staircase transformation from raw construction to elegant finished design. Features custom white painted posts, dark carpeted treads, and modern glass balustrades creating a sophisticated interior space.",
     isBeforeAfter: true
   },
   {
@@ -114,13 +124,38 @@ export const ProjectsPage: React.FC = () => {
                 </div>
 
                 <div className={`${isEven ? 'lg:order-2' : 'lg:order-1'} order-1`}>
-                  <img
-                    src={project.img}
-                    alt={project.title}
-                    className={`enhanced-image w-full object-cover rounded-lg shadow-lg ${
-                      project.isBeforeAfter ? 'h-[700px] sm:h-[850px] md:h-[1100px] lg:h-[1100px]' : 'h-auto'
-                    }`}
-                  />
+                  {project.beforeImg && project.afterImg ? (
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="relative">
+                        <img
+                          src={project.beforeImg}
+                          alt={`${project.title} - Before`}
+                          className="enhanced-image w-full h-[350px] sm:h-[425px] md:h-[550px] lg:h-[550px] object-cover rounded-lg shadow-lg"
+                        />
+                        <div className="absolute top-4 left-4 bg-brand-darkBlue text-white px-4 py-2 rounded-full font-bold uppercase text-sm">
+                          Before
+                        </div>
+                      </div>
+                      <div className="relative">
+                        <img
+                          src={project.afterImg}
+                          alt={`${project.title} - After`}
+                          className="enhanced-image w-full h-[350px] sm:h-[425px] md:h-[550px] lg:h-[550px] object-cover rounded-lg shadow-lg"
+                        />
+                        <div className="absolute top-4 left-4 bg-brand-blue text-white px-4 py-2 rounded-full font-bold uppercase text-sm">
+                          After
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <img
+                      src={project.img}
+                      alt={project.title}
+                      className={`enhanced-image w-full object-cover rounded-lg shadow-lg ${
+                        project.isBeforeAfter ? 'h-[700px] sm:h-[850px] md:h-[1100px] lg:h-[1100px]' : 'h-auto'
+                      }`}
+                    />
+                  )}
                 </div>
               </div>
             </div>
