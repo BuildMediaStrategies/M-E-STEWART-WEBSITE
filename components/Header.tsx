@@ -79,7 +79,7 @@ export const Header: React.FC = () => {
       >
       <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16 h-full">
         {/* Logo */}
-        <Link to="/" className="flex items-center" style={{ marginTop: '-20px', marginBottom: '-20px' }}>
+        <Link to="/" className="flex items-center" style={{ marginTop: '5px', marginBottom: '-15px', marginLeft: '-10px' }}>
           <img
             src="/assets/chatgpt_image_dec_7,_2025,_07_24_14_pm.png"
             alt="M E Stewart Contractors"
