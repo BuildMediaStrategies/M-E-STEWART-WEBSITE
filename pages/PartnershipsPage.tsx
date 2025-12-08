@@ -33,51 +33,99 @@ const services = [
 export const PartnershipsPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-50 pt-32 md:pt-36">
-      <div className="bg-gradient-to-br from-brand-darkBlue to-brand-blue text-white py-20 px-6 sm:px-12 lg:px-24">
+      <div className="bg-gradient-to-br from-brand-darkBlue to-brand-blue text-white py-24 px-6 sm:px-12 lg:px-24">
         <div className="mx-auto max-w-7xl text-center">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold uppercase mb-6 animate-fade-in">
             Partnership Services
           </h1>
-          <div className="mx-auto h-1 w-32 bg-white mb-6"></div>
+          <div className="mx-auto h-1 w-32 bg-white mb-8"></div>
           <p className="text-xl sm:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90">
             Fast, reliable refurbishment and maintenance solutions for property professionals
           </p>
         </div>
       </div>
 
-      <section className="py-20 px-6 sm:px-12 lg:px-24 bg-white">
+      <section className="py-24 px-6 sm:px-12 lg:px-24 bg-white">
         <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            <div>
+              <h2 className="text-4xl sm:text-5xl font-bold uppercase text-brand-darkBlue mb-6">
+                Estate Agent Partnerships
+              </h2>
+              <div className="h-1 w-24 bg-brand-blue mb-8"></div>
+              <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+                <p>
+                  Ongoing maintenance and building work for estate agents.
+                </p>
+                <div>
+                  <p className="font-semibold text-brand-darkBlue mb-3">Current work carried out for:</p>
+                  <ul className="space-y-2 ml-6">
+                    <li className="flex items-start">
+                      <span className="text-brand-blue mr-3 mt-1">•</span>
+                      <span>Martins & Co</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-brand-blue mr-3 mt-1">•</span>
+                      <span>Jenkinson's Estate Agents and Lettings</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="order-first lg:order-last">
+              <img
+                src="/assets/portfolio-1.webp"
+                alt="Property maintenance work"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 px-6 sm:px-12 lg:px-24 bg-slate-50">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-16 text-center">
+            <h2 className="text-4xl sm:text-5xl font-bold uppercase text-brand-darkBlue mb-4">
+              Services for Partners
+            </h2>
+            <div className="mx-auto h-1 w-24 bg-brand-blue"></div>
+          </div>
+          <div className="space-y-12">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="group relative border-2 border-gray-200 bg-white p-8 transition-all duration-300 lg:hover:-translate-y-3 lg:hover:shadow-2xl lg:hover:border-brand-blue rounded-lg"
+                className="flex items-start gap-6 lg:gap-8 py-6 border-b border-gray-200 last:border-b-0"
                 style={{
                   animation: `fade-in-up 0.6s ease-out ${index * 0.1}s both`
                 }}
               >
-                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-brand-grey text-brand-blue lg:group-hover:bg-brand-blue lg:group-hover:text-white transition-all duration-300 lg:group-hover:scale-110">
-                  <service.icon size={32} />
+                <div className="flex-shrink-0">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-brand-blue text-white">
+                    <service.icon size={28} />
+                  </div>
                 </div>
-                <h3 className="mb-4 text-2xl font-bold uppercase text-brand-darkBlue">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {service.description}
-                </p>
+                <div className="flex-1 pt-1">
+                  <h3 className="text-2xl font-bold uppercase text-brand-darkBlue mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 px-6 sm:px-12 lg:px-24 bg-slate-50">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="mb-4 text-4xl font-bold uppercase text-brand-darkBlue sm:text-5xl">
+      <section className="py-24 px-6 sm:px-12 lg:px-24 bg-white">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="mb-6 text-4xl font-bold uppercase text-brand-darkBlue sm:text-5xl text-center">
             Your Trusted Property Partner
           </h2>
-          <div className="mx-auto h-1 w-24 bg-brand-blue mb-6"></div>
-          <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+          <div className="mx-auto h-1 w-24 bg-brand-blue mb-12"></div>
+          <p className="text-xl text-gray-700 leading-relaxed text-center">
             We understand the unique demands of managing rental properties and the importance of rapid turnaround times. Our dedicated team delivers professional workmanship, transparent communication, and reliable service scheduling. Whether you manage a single property or an extensive portfolio, we provide the consistency and quality you need to maintain tenant satisfaction and protect your investment.
           </p>
         </div>
@@ -93,7 +141,7 @@ export const PartnershipsPage: React.FC = () => {
           </p>
           <Link
             to="/contact"
-            className="inline-block rounded-full px-10 py-4 text-lg font-bold uppercase transition-all bg-white text-brand-darkBlue lg:hover:bg-brand-darkBlue lg:hover:text-white shadow-lg lg:hover:shadow-2xl"
+            className="inline-block rounded-full px-10 py-4 text-lg font-bold uppercase transition-all bg-white text-brand-darkBlue lg:hover:bg-brand-darkBlue lg:hover:text-white shadow-lg lg:hover:shadow-2xl border-2 border-white"
           >
             Get In Touch
           </Link>
