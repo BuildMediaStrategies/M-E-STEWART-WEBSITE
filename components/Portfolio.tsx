@@ -41,12 +41,21 @@ export const Portfolio: React.FC = () => {
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setVisibleCards((prev) => new Set(prev).add(idx));
-            }
+            setVisibleCards((prev) => {
+              const newSet = new Set(prev);
+              if (entry.isIntersecting) {
+                newSet.add(idx);
+              } else {
+                newSet.delete(idx);
+              }
+              return newSet;
+            });
           });
         },
-        { threshold: 0.5 }
+        {
+          threshold: 0.3,
+          rootMargin: '-50px 0px -50px 0px'
+        }
       );
 
       observer.observe(card);
@@ -62,11 +71,41 @@ export const Portfolio: React.FC = () => {
     <section id="projects" className="py-20 px-6 sm:px-12 lg:px-24 bg-white">
       <style>{`
         @media (max-width: 1023px) {
-          .card-visible .mobile-scale {
-            transform: scale(1.1);
+          .portfolio-card {
+            opacity: 0;
+            transform: translateY(40px) scale(0.95);
+            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                        transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
           }
-          .card-visible .mobile-overlay {
+
+          .portfolio-card.card-visible {
             opacity: 1;
+            transform: translateY(0) scale(1);
+          }
+
+          .portfolio-card .mobile-scale {
+            transform: scale(1);
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+          }
+
+          .portfolio-card.card-visible .mobile-scale {
+            transform: scale(1.05);
+          }
+
+          .portfolio-card .mobile-overlay {
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+          }
+
+          .portfolio-card.card-visible .mobile-overlay {
+            opacity: 1;
+          }
+        }
+
+        @media (min-width: 1024px) {
+          .portfolio-card {
+            opacity: 1;
+            transform: none;
           }
         }
       `}</style>
@@ -92,7 +131,7 @@ export const Portfolio: React.FC = () => {
             <div
               key={idx}
               ref={(el) => (cardRefs.current[idx] = el)}
-              className={`group relative h-80 w-full overflow-hidden rounded-3xl cursor-pointer shadow-lg ${
+              className={`portfolio-card group relative h-80 w-full overflow-hidden rounded-3xl cursor-pointer shadow-lg ${
                 visibleCards.has(idx) ? 'card-visible' : ''
               }`}
             >
