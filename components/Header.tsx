@@ -70,81 +70,85 @@ export const Header: React.FC = () => {
           -webkit-font-smoothing: subpixel-antialiased;
         }
       `}</style>
+
       <header
-        className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md"
+        className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md overflow-visible"
         style={{
           boxShadow: '0 4px 20px rgba(0, 149, 255, 0.6), 0 2px 8px rgba(0, 149, 255, 0.8)'
         }}
       >
-      <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16 py-3">
-        {/* Logo */}
-        <Link to="/" className="flex items-center py-1">
-          <img
-            src="/assets/chatgpt_image_dec_7,_2025,_07_24_14_pm.png"
-            alt="M E Stewart Contractors"
-            loading="eager"
-            className="logo-img w-auto h-20 sm:h-24 md:h-28 object-contain"
-          />
-        </Link>
-
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8" onMouseLeave={() => setActiveLink(null)}>
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              to={link.href}
-              onMouseEnter={() => setActiveLink(link.name)}
-              className={`nav-link text-sm font-bold uppercase tracking-wide transition-colors text-brand-slate hover:text-brand-blue ${
-                activeLink === link.name ? 'active' : ''
-              }`}
-            >
-              {link.name}
-            </Link>
-          ))}
-          <Link
-            to="/contact"
-            className="rounded-full px-6 py-2 text-sm font-bold uppercase transition-colors bg-brand-blue text-white hover:bg-brand-darkBlue"
-          >
-            Get Quote
+        <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16 pt-5 pb-2">
+          {/* Logo */}
+          <Link to="/" className="flex items-center">
+            <img
+              src="/assets/chatgpt_image_dec_7,_2025,_07_24_14_pm.png"
+              alt="M E Stewart Contractors"
+              loading="eager"
+              className="logo-img w-auto h-20 sm:h-24 md:h-28 object-contain"
+            />
           </Link>
-        </nav>
 
-        {/* Mobile Toggle */}
-        <button
-          className="md:hidden"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
-          {mobileMenuOpen ? (
-            <X className="text-brand-darkBlue w-5 h-5 sm:w-6 sm:h-6" />
-          ) : (
-            <Menu className="text-brand-darkBlue w-5 h-5 sm:w-6 sm:h-6" />
-          )}
-        </button>
-      </div>
-
-      {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="absolute top-full left-0 w-full bg-white shadow-xl md:hidden flex flex-col items-center py-8 gap-6 animate-fade-in-down">
-          {navLinks.map((link) => (
+          {/* Desktop Nav */}
+          <nav
+            className="hidden md:flex items-center gap-8"
+            onMouseLeave={() => setActiveLink(null)}
+          >
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                onMouseEnter={() => setActiveLink(link.name)}
+                className={`nav-link text-sm font-bold uppercase tracking-wide transition-colors text-brand-slate hover:text-brand-blue ${
+                  activeLink === link.name ? 'active' : ''
+                }`}
+              >
+                {link.name}
+              </Link>
+            ))}
             <Link
-              key={link.name}
-              to={link.href}
-              onClick={() => setMobileMenuOpen(false)}
-              className="nav-link text-lg font-bold uppercase text-brand-darkBlue hover:text-brand-blue"
+              to="/contact"
+              className="rounded-full px-6 py-2 text-sm font-bold uppercase transition-colors bg-brand-blue text-white hover:bg-brand-darkBlue"
             >
-              {link.name}
+              Get Quote
             </Link>
-          ))}
-          <Link
-             to="/contact"
-             onClick={() => setMobileMenuOpen(false)}
-             className="mt-4 px-8 py-3 bg-brand-blue text-white font-bold uppercase rounded-full"
-           >
-             Get Quote
-           </Link>
+          </nav>
+
+          {/* Mobile Toggle */}
+          <button
+            className="md:hidden"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? (
+              <X className="text-brand-darkBlue w-5 h-5 sm:w-6 sm:h-6" />
+            ) : (
+              <Menu className="text-brand-darkBlue w-5 h-5 sm:w-6 sm:h-6" />
+            )}
+          </button>
         </div>
-      )}
-    </header>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="absolute top-full left-0 w-full bg-white shadow-xl md:hidden flex flex-col items-center py-8 gap-6 animate-fade-in-down">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className="nav-link text-lg font-bold uppercase text-brand-darkBlue hover:text-brand-blue"
+              >
+                {link.name}
+              </Link>
+            ))}
+            <Link
+              to="/contact"
+              onClick={() => setMobileMenuOpen(false)}
+              className="mt-4 px-8 py-3 bg-brand-blue text-white font-bold uppercase rounded-full"
+            >
+              Get Quote
+            </Link>
+          </div>
+        )}
+      </header>
     </>
   );
 };
