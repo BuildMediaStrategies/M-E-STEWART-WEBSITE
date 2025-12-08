@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, MapPin } from 'lucide-react';
-import { AnimatedUnderline } from './AnimatedUnderline';
 
 export const Hero: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -68,7 +67,7 @@ export const Hero: React.FC = () => {
           </div>
 
           <h1 className="mb-6 text-4xl font-bold uppercase leading-tight text-white sm:text-5xl md:text-7xl drop-shadow-lg">
-            Experienced <AnimatedUnderline color="#ffffff">Builders</AnimatedUnderline> <br />
+            Experienced Builders <br />
             Based in <span className="text-blue-400">Deal</span><br />
             Covering Dover & Beyond
           </h1>

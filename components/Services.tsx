@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Hammer, Home, Ruler, HardHat, Building, PaintBucket } from 'lucide-react';
-import { AnimatedUnderline } from './AnimatedUnderline';
 
 const services = [
   {
@@ -83,7 +82,7 @@ export const Services: React.FC = () => {
       <div className="mx-auto max-w-7xl">
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-4xl font-bold uppercase text-brand-darkBlue sm:text-5xl">
-            Our <AnimatedUnderline delay={200}>Expertise</AnimatedUnderline>
+            Our Expertise
           </h2>
           <div className="mx-auto h-1 w-24 bg-brand-blue"></div>
           <p className="mt-6 text-lg text-brand-slate max-w-2xl mx-auto">

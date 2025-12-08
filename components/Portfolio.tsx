@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { AnimatedUnderline } from './AnimatedUnderline';
 
 const projects = [
   {
@@ -95,7 +94,7 @@ export const Portfolio: React.FC = () => {
         <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
              <h2 className="text-4xl font-bold uppercase text-brand-darkBlue sm:text-5xl">
-              Featured <AnimatedUnderline>Projects</AnimatedUnderline>
+              Featured Projects
             </h2>
             <div className="h-1 w-24 bg-brand-blue mt-4"></div>
             <p className="mt-4 text-brand-slate">Delivering excellence across Kent.</p>
