@@ -48,11 +48,11 @@ const projects: Project[] = [
     description: "High-end kitchen renovation with bespoke cabinetry, premium appliances, and designer finishes."
   },
   {
-    title: "Loft Conversion Suite",
+    title: "Full House Renovation - Before & After",
     location: "Canterbury, Kent",
     beforeImg: "/assets/mark_stewart_conversion_job_before.webp",
     afterImg: "/assets/mark_steward_conversion_after.webp",
-    description: "Master bedroom suite with en-suite bathroom and walk-in wardrobe, maximizing attic space.",
+    description: "Complete house renovation featuring updated finishes, fixtures, and interior improvements throughout.",
     isBeforeAfter: true
   }
 ];
