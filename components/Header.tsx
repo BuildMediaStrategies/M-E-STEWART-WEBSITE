@@ -19,21 +19,13 @@ export const Header: React.FC = () => {
     <>
       <style>{`
         @keyframes underlineSlide {
-          0% {
-            transform: scaleX(0);
-          }
-          100% {
-            transform: scaleX(1);
-          }
+          0% { transform: scaleX(0); }
+          100% { transform: scaleX(1); }
         }
 
         @keyframes shimmer {
-          0% {
-            background-position: 200% 0;
-          }
-          100% {
-            background-position: -200% 0;
-          }
+          0% { background-position: 200% 0; }
+          100% { background-position: -200% 0; }
         }
 
         .nav-link {
@@ -69,14 +61,14 @@ export const Header: React.FC = () => {
           boxShadow: '0 4px 20px rgba(0, 149, 255, 0.6), 0 2px 8px rgba(0, 149, 255, 0.8)'
         }}
       >
-        <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16 py-3">
+        <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16 py-2 sm:py-3 md:py-4 min-h-[80px] sm:min-h-[100px] md:min-h-[120px]">
           {/* Logo */}
-          <Link to="/" className="flex items-center overflow-visible max-h-[100px]">
+          <Link to="/" className="flex items-center">
             <img
               src="/assets/chatgpt_image_dec_7,_2025,_07_24_14_pm.png"
               alt="M E Stewart Contractors"
               loading="eager"
-              className="block max-h-[96px] w-auto h-auto object-contain"
+              className="object-contain block max-h-[72px] sm:max-h-[84px] md:max-h-[96px] w-auto"
               style={{ display: 'block' }}
             />
           </Link>
