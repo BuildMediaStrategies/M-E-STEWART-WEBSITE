@@ -36,11 +36,11 @@ export const PartnershipsPage: React.FC = () => {
       <div className="bg-gradient-to-br from-brand-darkBlue to-brand-blue text-white py-24 px-6 sm:px-12 lg:px-24">
         <div className="mx-auto max-w-7xl text-center">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold uppercase mb-6 animate-fade-in">
-            Partnership Services
+            Landlord & Estate Agent Services
           </h1>
           <div className="mx-auto h-1 w-32 bg-white mb-8"></div>
           <p className="text-xl sm:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90">
-            Fast, reliable refurbishment and maintenance solutions for property professionals
+            Trusted building partners for landlords and letting agents across Deal, Dover & Kent
           </p>
         </div>
       </div>
@@ -48,15 +48,18 @@ export const PartnershipsPage: React.FC = () => {
       <section className="py-24 px-6 sm:px-12 lg:px-24 bg-white">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-4xl sm:text-5xl font-bold uppercase text-brand-darkBlue mb-6">
-            Estate Agent Partnerships
+            Working with Landlords & Estate Agents
           </h2>
           <div className="mx-auto h-1 w-24 bg-brand-blue mb-8"></div>
           <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
             <p>
-              Ongoing maintenance and building work for estate agents.
+              We understand the rental property business — fast turnarounds, quality work, and keeping costs realistic. Whether you manage one property or fifty, we're here to help keep your portfolio in great condition.
             </p>
-            <div>
-              <p className="font-semibold text-brand-darkBlue mb-3">Current work carried out for:</p>
+            <p>
+              From tenant changeovers to bigger refurbs, we work with landlords and letting agents right across Deal, Dover, and East Kent. Straightforward communication, reliable service, and work done right the first time.
+            </p>
+            <div className="mt-8">
+              <p className="font-semibold text-brand-darkBlue mb-3">Trusted by local agents including:</p>
               <ul className="space-y-2 inline-block text-left">
                 <li className="flex items-start">
                   <span className="text-brand-blue mr-3 mt-1">•</span>

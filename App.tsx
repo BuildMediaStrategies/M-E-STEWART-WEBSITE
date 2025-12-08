@@ -12,6 +12,8 @@ import { PartnershipsPage } from './pages/PartnershipsPage';
 import { WhyChoosePage } from './pages/WhyChoosePage';
 import { TestimonialsPage } from './pages/TestimonialsPage';
 import { FAQsPage } from './pages/FAQsPage';
+import { DealPage } from './pages/DealPage';
+import { DoverPage } from './pages/DoverPage';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -41,6 +43,8 @@ function App() {
             <Route path="/why-choose-us" element={<WhyChoosePage />} />
             <Route path="/testimonials" element={<TestimonialsPage />} />
             <Route path="/faqs" element={<FAQsPage />} />
+            <Route path="/builders-deal" element={<DealPage />} />
+            <Route path="/builders-dover" element={<DoverPage />} />
           </Routes>
         </main>
         <Footer />

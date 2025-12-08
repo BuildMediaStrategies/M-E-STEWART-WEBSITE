@@ -7,15 +7,15 @@ const faqsData = [
     questions: [
       {
         question: "What areas do you cover?",
-        answer: "We primarily serve Deal, Dover, Sandwich, Walmer, and surrounding areas across Kent. We're happy to discuss projects outside these areas on a case-by-case basis."
+        answer: "We're based in Deal and work throughout Dover, Sandwich, Walmer, St Margaret's, Canterbury, and surrounding areas across East Kent. We're happy to discuss projects outside these areas too."
       },
       {
         question: "How long have you been in business?",
-        answer: "M.E. Stewart Builders has been providing quality construction services in Kent for over 20 years, building a reputation for excellence and reliability."
+        answer: "M E Stewart has been providing quality building services across Deal, Dover, and Kent for 28 years, building a strong reputation for reliability and craftsmanship."
       },
       {
         question: "Do you provide free quotes?",
-        answer: "Yes, we offer free, no-obligation quotes for all projects. Contact us to schedule a consultation and site visit."
+        answer: "Yes, we offer free, no-obligation quotes for all projects. Contact us to schedule a consultation and site visit — we'll come to you in Deal, Dover, or anywhere nearby."
       },
       {
         question: "Are you fully insured?",
@@ -28,19 +28,19 @@ const faqsData = [
     questions: [
       {
         question: "What types of projects do you handle?",
-        answer: "We handle a wide range of projects including home extensions, renovations, new builds, commercial construction, interior remodeling, and bespoke carpentry work."
+        answer: "We handle everything from home extensions and loft conversions to full renovations, new builds, kitchens, bathrooms, and general property repairs. Whether it's a small job or a major project, we've got you covered."
       },
       {
-        question: "How long does a typical project take?",
-        answer: "Project timelines vary depending on scope and complexity. Small renovations take 2-4 weeks, medium-sized extensions 6-12 weeks, and larger builds can take 3-6 months. We'll provide a detailed timeline during the planning phase."
+        question: "How long does a kitchen renovation usually take?",
+        answer: "Most kitchen renovations take 2-4 weeks depending on the scope. This includes removal of the old kitchen, any structural changes, plumbing and electrical work, fitting, tiling, and decorating. We'll give you a clear timeline before we start."
       },
       {
-        question: "Can you help with planning permission?",
-        answer: "Yes, we can assist with planning applications and work closely with architects and planning consultants to ensure your project meets all regulatory requirements."
+        question: "Do I need planning permission for an extension in Dover?",
+        answer: "It depends on the size and type of extension. Many single-story rear extensions fall under permitted development rights and don't need planning permission. We can advise on what's needed and help with applications if required — we've done hundreds of extensions across Dover and Deal."
       },
       {
-        question: "Do you handle both residential and commercial projects?",
-        answer: "Absolutely. We have extensive experience in both residential and commercial construction, from single-family homes to retail spaces and offices."
+        question: "Can you help with planning permission and building regulations?",
+        answer: "Yes, we can guide you through the process and work with architects and structural engineers when needed. We handle all aspects to ensure your project meets local planning and building control requirements in Deal, Dover, and across Kent."
       }
     ]
   },
