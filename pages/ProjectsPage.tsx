@@ -34,7 +34,7 @@ const projects: Project[] = [
     description: "Complete bathroom transformation featuring modern fixtures, premium tiling, elegant lighting, and high-quality finishes. A sophisticated space that combines style with functionality."
   },
   {
-    title: "Bathroom Refurbishment",
+    title: "Bathroom Refurbishment - Before & After",
     location: "Deal, Kent",
     beforeImg: "/assets/mark_stewart_house_refurb_image_before.jpeg",
     afterImg: "/assets/mark_stewart_house_refurb_after.jpeg",
