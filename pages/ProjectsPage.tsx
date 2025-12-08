@@ -29,13 +29,13 @@ const projects: Project[] = [
   {
     title: "Modern Family Extension",
     location: "Deal, Kent",
-    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1470&auto=format&fit=crop",
+    img: "/assets/mark_stewart_bathroom_refurb_.jpeg",
     description: "Contemporary single-story extension with bi-fold doors and vaulted ceilings, creating a seamless indoor-outdoor living space."
   },
   {
     title: "Victorian Property Restoration",
     location: "Dover, Kent",
-    img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1453&auto=format&fit=crop",
+    img: "/assets/mark_stewart_house_refurb_image_before.jpeg",
     description: "Full restoration of a Victorian townhouse, preserving period features while modernizing systems and amenities."
   },
   {
@@ -47,7 +47,7 @@ const projects: Project[] = [
   {
     title: "Luxury Kitchen & Living",
     location: "Walmer, Kent",
-    img: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=1470&auto=format&fit=crop",
+    img: "/assets/mark_stewart_kitchen_refurb_.jpeg",
     description: "High-end kitchen renovation with bespoke cabinetry, premium appliances, and designer finishes."
   },
   {
@@ -59,7 +59,7 @@ const projects: Project[] = [
   {
     title: "Loft Conversion Suite",
     location: "Canterbury, Kent",
-    img: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1374&auto=format&fit=crop",
+    img: "/assets/mark_stewart_conversion_job_before.webp",
     description: "Master bedroom suite with en-suite bathroom and walk-in wardrobe, maximizing attic space."
   },
   {

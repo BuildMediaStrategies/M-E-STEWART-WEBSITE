@@ -6,7 +6,8 @@ const services = [
   {
     icon: Home,
     title: "General Building",
-    description: "Comprehensive building services for all types of construction projects with expert craftsmanship and attention to detail."
+    description: "Comprehensive building services for all types of construction projects with expert craftsmanship and attention to detail.",
+    img: "/assets/mark_stewart_hallway_refurb.jpeg"
   },
   {
     icon: Hammer,
@@ -16,7 +17,8 @@ const services = [
   {
     icon: Building,
     title: "Loft Conversions",
-    description: "Unlock the potential of your attic. Creating master suites, offices, and additional bedrooms with expert design."
+    description: "Unlock the potential of your attic. Creating master suites, offices, and additional bedrooms with expert design.",
+    img: "/assets/mark_stewart_conversion_stairs_after.webp"
   },
   {
     icon: HardHat,
@@ -56,22 +58,26 @@ const services = [
   {
     icon: Home,
     title: "New Builds",
-    description: "Complete project management from foundation to finish. We build dream homes with uncompromising quality and craftsmanship."
+    description: "Complete project management from foundation to finish. We build dream homes with uncompromising quality and craftsmanship.",
+    img: "/assets/4-Holmwood-Farm-copy-e1759921061483.webp"
   },
   {
     icon: Ruler,
     title: "Extensions / Conversions",
-    description: "Expand your living space seamlessly with single-story, double-story, and garage conversions that blend perfectly with existing structures."
+    description: "Expand your living space seamlessly with single-story, double-story, and garage conversions that blend perfectly with existing structures.",
+    img: "/assets/mark_steward_conversion_after.webp"
   },
   {
     icon: Building,
     title: "Period Property Restoration",
-    description: "Specialist restoration of period and heritage properties, preserving character while integrating modern comforts."
+    description: "Specialist restoration of period and heritage properties, preserving character while integrating modern comforts.",
+    img: "/assets/mark_stewart_house_refurb_after.jpeg"
   },
   {
     icon: PaintBucket,
     title: "Refurbishments",
-    description: "Complete property refurbishment services, modernizing interiors and exteriors while maintaining structural integrity."
+    description: "Complete property refurbishment services, modernizing interiors and exteriors while maintaining structural integrity.",
+    img: "/assets/mark_stewart_house_refurb_after_2.jpeg"
   },
   {
     icon: Hammer,
@@ -168,7 +174,15 @@ export const ServicesPage: React.FC = () => {
                 </p>
               </div>
               <div className={`${index % 2 === 0 ? 'lg:order-2' : 'lg:order-1'}`}>
-                <div className="w-full aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg"></div>
+                {service.img ? (
+                  <img
+                    src={service.img}
+                    alt={service.title}
+                    className="w-full aspect-[4/3] object-cover rounded-lg shadow-lg"
+                  />
+                ) : (
+                  <div className="w-full aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg"></div>
+                )}
               </div>
             </div>
           </div>
