@@ -82,10 +82,9 @@ export const Services: React.FC = () => {
       <div className="mx-auto max-w-7xl">
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-4xl font-bold uppercase text-brand-darkBlue sm:text-5xl">
-            Our Expertise
+            Our <span className="inline-block relative">Expertise<div className="h-1 bg-brand-blue mt-2 absolute left-0 right-0"></div></span>
           </h2>
-          <div className="mx-auto h-1 w-24 bg-brand-blue"></div>
-          <p className="mt-6 text-lg text-brand-slate max-w-2xl mx-auto">
+          <p className="mt-8 text-lg text-brand-slate max-w-2xl mx-auto">
             We specialize in a wide range of construction services, delivering superior results on time and within budget.
           </p>
         </div>

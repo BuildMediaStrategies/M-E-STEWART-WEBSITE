@@ -23,9 +23,8 @@ export const FAQPreview: React.FC = () => {
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold uppercase text-brand-darkBlue sm:text-5xl">
-            Frequently Asked Questions
+            Frequently Asked <span className="inline-block relative">Questions<div className="h-1 bg-brand-blue mt-2 absolute left-0 right-0"></div></span>
           </h2>
-          <div className="h-1 w-24 bg-brand-blue mt-4 mx-auto"></div>
         </div>
 
         <div className="space-y-6 mb-10">

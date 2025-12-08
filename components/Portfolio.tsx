@@ -94,10 +94,9 @@ export const Portfolio: React.FC = () => {
         <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
              <h2 className="text-4xl font-bold uppercase text-brand-darkBlue sm:text-5xl">
-              Featured Projects
+              Featured <span className="inline-block relative">Projects<div className="h-1 bg-brand-blue mt-2 absolute left-0 right-0"></div></span>
             </h2>
-            <div className="h-1 w-24 bg-brand-blue mt-4"></div>
-            <p className="mt-4 text-brand-slate">Delivering excellence across Kent.</p>
+            <p className="mt-6 text-brand-slate">Delivering excellence across Kent.</p>
           </div>
           <Link
             to="/projects"

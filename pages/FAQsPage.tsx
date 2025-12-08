@@ -97,10 +97,9 @@ export const FAQsPage: React.FC = () => {
       <div className="bg-gradient-to-br from-brand-darkBlue to-brand-blue text-white pt-24 pb-20 px-6 sm:px-12 lg:px-24">
         <div className="mx-auto max-w-5xl">
           <h1 className="text-5xl font-bold uppercase mb-4 sm:text-6xl">
-            Frequently Asked Questions
+            Frequently Asked <span className="inline-block relative">Questions<div className="h-1 bg-white mt-2 absolute left-0 right-0"></div></span>
           </h1>
-          <div className="h-1 w-24 bg-white mb-6"></div>
-          <p className="text-xl text-blue-100">
+          <p className="text-xl text-blue-100 mt-6">
             Find answers to common questions about our services, process, and expertise.
           </p>
         </div>

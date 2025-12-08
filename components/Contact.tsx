@@ -7,10 +7,9 @@ export const Contact: React.FC = () => {
       <div className="mx-auto max-w-7xl">
         <div className="mb-16 text-center">
            <h2 className="text-4xl font-bold uppercase text-brand-darkBlue sm:text-5xl">
-            Contact Us
+            Contact <span className="inline-block relative">Us<div className="h-1 bg-brand-blue mt-2 absolute left-0 right-0"></div></span>
            </h2>
-           <div className="mx-auto mt-4 h-1 w-24 bg-brand-blue"></div>
-           <p className="mt-4 text-brand-slate max-w-xl mx-auto">
+           <p className="mt-6 text-brand-slate max-w-xl mx-auto">
              Based in Deal, serving the entire Kent region.
            </p>
         </div>
