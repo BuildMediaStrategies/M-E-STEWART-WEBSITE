@@ -64,12 +64,12 @@ export const Header: React.FC = () => {
           boxShadow: '0 4px 20px rgba(0, 149, 255, 0.6), 0 2px 8px rgba(0, 149, 255, 0.8)'
         }}
       >
-        <div className="flex items-center justify-between px-4 md:px-8 lg:px-16 py-1">
-          <Link to="/" className="flex items-center flex-shrink-0">
+        <div className="flex items-center justify-between px-4 md:px-8 lg:px-16 py-0">
+          <Link to="/" className="flex items-center flex-shrink-0 -ml-2 md:-ml-4">
             <img
               src={logo}
               alt="M E Stewart Contractors"
-              className="h-32 md:h-40 w-auto object-contain"
+              className="h-36 md:h-44 w-auto object-contain"
             />
           </Link>
 
