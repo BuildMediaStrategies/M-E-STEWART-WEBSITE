@@ -1,4 +1,5 @@
 import React from 'react';
+import { AnimatedUnderline } from '../components/AnimatedUnderline';
 
 type Project = {
   title: string;
@@ -76,7 +77,7 @@ export const ProjectsPage: React.FC = () => {
       <div className="bg-gradient-to-br from-brand-darkBlue to-brand-blue text-white py-20 px-6 sm:px-12 lg:px-24">
         <div className="mx-auto max-w-7xl text-center">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold uppercase mb-6 animate-fade-in">
-            Our Projects in Deal, Dover & Kent
+            Our <AnimatedUnderline color="#ffffff" delay={100}>Projects</AnimatedUnderline> in Deal, Dover & Kent
           </h1>
           <div className="mx-auto h-1 w-32 bg-white mb-6"></div>
           <p className="text-xl sm:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90">

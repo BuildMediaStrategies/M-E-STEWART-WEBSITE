@@ -1,5 +1,6 @@
 import React from 'react';
 import { Building, MapPin, Users, Briefcase, Hammer, Target } from 'lucide-react';
+import { AnimatedUnderline } from '../components/AnimatedUnderline';
 
 const infoCards = [
   {
@@ -61,7 +62,7 @@ export const AboutPage: React.FC = () => {
       <div className="bg-gradient-to-br from-brand-darkBlue to-brand-blue text-white py-20 px-6 sm:px-12 lg:px-24">
         <div className="mx-auto max-w-7xl text-center">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold uppercase mb-6 animate-fade-in">
-            About M E Stewart
+            About <AnimatedUnderline color="#ffffff" delay={100}>M E Stewart</AnimatedUnderline>
           </h1>
           <div className="mx-auto h-1 w-32 bg-white mb-6"></div>
           <p className="text-xl sm:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90">
@@ -104,7 +105,7 @@ export const AboutPage: React.FC = () => {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 text-center">
             <h2 className="text-4xl font-bold uppercase text-brand-darkBlue mb-4 sm:text-5xl">
-              Areas Covered
+              Areas <AnimatedUnderline delay={200}>Covered</AnimatedUnderline>
             </h2>
             <div className="mx-auto h-1 w-24 bg-brand-blue mb-6"></div>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">

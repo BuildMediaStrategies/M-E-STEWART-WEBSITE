@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { AnimatedUnderline } from './AnimatedUnderline';
 
 export const Contact: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ export const Contact: React.FC = () => {
       <div className="mx-auto max-w-7xl">
         <div className="mb-16 text-center">
            <h2 className="text-4xl font-bold uppercase text-brand-darkBlue sm:text-5xl">
-            Contact Us
+            Contact <AnimatedUnderline delay={300}>Us</AnimatedUnderline>
            </h2>
            <div className="mx-auto mt-4 h-1 w-24 bg-brand-blue"></div>
            <p className="mt-4 text-brand-slate max-w-xl mx-auto">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Hammer, Home, Ruler, HardHat, Building, PaintBucket, CheckCircle, Clock, Award, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { AnimatedUnderline } from '../components/AnimatedUnderline';
 
 const services = [
   {
@@ -375,7 +376,7 @@ export const ServicesPage: React.FC = () => {
       <div className="bg-gradient-to-br from-brand-darkBlue to-brand-blue text-white py-24 px-6 sm:px-12 lg:px-24">
         <div className="mx-auto max-w-7xl text-center">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold uppercase mb-6 animate-fade-in">
-            Building Services in Deal & Dover
+            Building <AnimatedUnderline color="#ffffff" delay={100}>Services</AnimatedUnderline> in Deal & Dover
           </h1>
           <div className="mx-auto h-1 w-32 bg-white mb-8"></div>
           <p className="text-xl sm:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90">
