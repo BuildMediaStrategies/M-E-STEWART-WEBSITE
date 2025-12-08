@@ -69,14 +69,15 @@ export const Header: React.FC = () => {
           boxShadow: '0 4px 20px rgba(0, 149, 255, 0.6), 0 2px 8px rgba(0, 149, 255, 0.8)'
         }}
       >
-        <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16 py-3 h-[96px]">
+        <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16 py-3">
           {/* Logo */}
-          <Link to="/" className="flex items-center max-h-full overflow-visible">
+          <Link to="/" className="flex items-center overflow-visible max-h-[100px]">
             <img
               src="/assets/chatgpt_image_dec_7,_2025,_07_24_14_pm.png"
               alt="M E Stewart Contractors"
               loading="eager"
-              className="block h-full w-auto max-h-[88px]"
+              className="block max-h-[96px] w-auto h-auto object-contain"
+              style={{ display: 'block' }}
             />
           </Link>
 
