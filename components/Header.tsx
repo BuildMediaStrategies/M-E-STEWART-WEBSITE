@@ -69,7 +69,7 @@ export const Header: React.FC = () => {
             <img
               src={logo}
               alt="M E Stewart Contractors"
-              className="h-16 w-auto object-contain"
+              className="h-24 md:h-28 w-auto object-contain"
             />
           </Link>
 
