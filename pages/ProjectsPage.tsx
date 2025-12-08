@@ -21,16 +21,16 @@ const projects: Project[] = [
   {
     title: "Staircase Renovation - Before & After",
     location: "Kent",
-    beforeImg: "/assets/image copy copy copy.png",
-    afterImg: "/assets/image copy copy.png",
+    beforeImg: "/assets/mark_stewart_conversion_job_before.webp",
+    afterImg: "/assets/mark_steward_conversion_after.webp",
     description: "Complete staircase transformation from raw construction to elegant finished design. Features custom white painted posts, dark carpeted treads, and modern glass balustrades creating a sophisticated interior space.",
     isBeforeAfter: true
   },
   {
-    title: "Modern Family Extension",
+    title: "Bathroom Refurbishment",
     location: "Deal, Kent",
     img: "/assets/mark_stewart_bathroom_refurb_.jpeg",
-    description: "Contemporary single-story extension with bi-fold doors and vaulted ceilings, creating a seamless indoor-outdoor living space."
+    description: "Complete bathroom transformation featuring modern fixtures, premium tiling, elegant lighting, and high-quality finishes. A sophisticated space that combines style with functionality."
   },
   {
     title: "Victorian Property Restoration",
@@ -125,7 +125,7 @@ export const ProjectsPage: React.FC = () => {
 
                 <div className={`${isEven ? 'lg:order-2' : 'lg:order-1'} order-1`}>
                   {project.beforeImg && project.afterImg ? (
-                    <div className="grid grid-cols-2 gap-4 h-[300px] sm:h-[350px] md:h-[400px] lg:h-[400px]">
+                    <div className="grid grid-cols-2 gap-4 h-[280px] sm:h-[300px] md:h-[320px] lg:h-[350px]">
                       <div className="w-full h-full overflow-hidden rounded-lg shadow-lg">
                         <img
                           src={project.beforeImg}
@@ -147,7 +147,7 @@ export const ProjectsPage: React.FC = () => {
                     <img
                       src={project.img}
                       alt={project.title}
-                      className="enhanced-image w-full object-cover rounded-lg shadow-lg h-[300px] sm:h-[350px] md:h-[400px] lg:h-[400px]"
+                      className="enhanced-image w-full object-cover rounded-lg shadow-lg h-[280px] sm:h-[300px] md:h-[320px] lg:h-[350px]"
                     />
                   )}
                 </div>
