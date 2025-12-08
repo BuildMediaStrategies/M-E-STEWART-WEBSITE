@@ -72,14 +72,14 @@ const projects: Project[] = [
 
 export const ProjectsPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-slate-50 pt-24">
-      <div className="bg-gradient-to-br from-brand-darkBlue to-brand-blue text-white py-20 px-6 sm:px-12 lg:px-24">
+    <div className="min-h-screen bg-slate-50 pt-20 sm:pt-24">
+      <div className="bg-gradient-to-br from-brand-darkBlue to-brand-blue text-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-24">
         <div className="mx-auto max-w-7xl text-center">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold uppercase mb-6 animate-fade-in">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold uppercase mb-4 sm:mb-6 animate-fade-in">
             Our Projects in Deal, Dover & Kent
           </h1>
-          <div className="mx-auto h-1 w-32 bg-white mb-6"></div>
-          <p className="text-xl sm:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90">
+          <div className="mx-auto h-1 w-24 sm:w-32 bg-white mb-4 sm:mb-6"></div>
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90 px-4">
             Explore our portfolio of completed projects across Deal, Dover, and Kent. Each build reflects our commitment to quality, craftsmanship, and client satisfaction.
           </p>
         </div>
@@ -91,21 +91,21 @@ export const ProjectsPage: React.FC = () => {
         return (
           <section
             key={index}
-            className={`py-16 px-6 sm:px-12 lg:px-24 ${
+            className={`py-10 sm:py-12 lg:py-16 px-4 sm:px-6 md:px-12 lg:px-24 ${
               isEven ? 'bg-white' : 'bg-slate-50'
             }`}
           >
             <div className="mx-auto max-w-7xl">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
                 <div className={`${isEven ? 'lg:order-1' : 'lg:order-2'} order-2`}>
-                  <div className="space-y-4">
-                    <p className="text-sm font-bold uppercase tracking-wide text-brand-blue">
+                  <div className="space-y-3 sm:space-y-4">
+                    <p className="text-xs sm:text-sm font-bold uppercase tracking-wide text-brand-blue">
                       {project.location}
                     </p>
-                    <h2 className="text-3xl sm:text-4xl font-bold uppercase text-brand-darkBlue">
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold uppercase text-brand-darkBlue">
                       {project.title}
                     </h2>
-                    <p className="text-gray-700 text-lg leading-relaxed">
+                    <p className="text-gray-700 text-sm sm:text-base lg:text-lg leading-relaxed">
                       {project.description}
                     </p>
                   </div>
@@ -113,7 +113,7 @@ export const ProjectsPage: React.FC = () => {
 
                 <div className={`${isEven ? 'lg:order-2' : 'lg:order-1'} order-1`}>
                   {project.beforeImg && project.afterImg ? (
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                       <div className="project-image-container">
                         <img
                           src={project.beforeImg}
@@ -121,6 +121,7 @@ export const ProjectsPage: React.FC = () => {
                           loading="eager"
                           className="project-image"
                         />
+                        <div className="absolute bottom-2 left-2 bg-black/70 text-white px-2 py-1 text-xs sm:text-sm font-bold rounded">Before</div>
                       </div>
                       <div className="project-image-container">
                         <img
@@ -129,6 +130,7 @@ export const ProjectsPage: React.FC = () => {
                           loading="eager"
                           className="project-image"
                         />
+                        <div className="absolute bottom-2 left-2 bg-brand-blue text-white px-2 py-1 text-xs sm:text-sm font-bold rounded">After</div>
                       </div>
                     </div>
                   ) : (
@@ -148,17 +150,17 @@ export const ProjectsPage: React.FC = () => {
         );
       })}
 
-      <section className="py-20 px-6 sm:px-12 lg:px-24 bg-brand-blue text-white">
+      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-24 bg-brand-blue text-white">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="mb-6 text-4xl font-bold uppercase sm:text-5xl">
+          <h2 className="mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl font-bold uppercase">
             Start Your Project Today
           </h2>
-          <p className="mb-8 text-xl leading-relaxed opacity-90">
+          <p className="mb-6 sm:mb-8 text-base sm:text-lg lg:text-xl leading-relaxed opacity-90 px-4">
             Every project begins with a conversation. Contact us to discuss how we can bring your vision to life.
           </p>
           <a
             href="/contact"
-            className="inline-block rounded-full px-10 py-4 text-lg font-bold uppercase transition-all bg-white text-brand-darkBlue hover:bg-brand-darkBlue hover:text-white shadow-lg hover:shadow-2xl"
+            className="inline-block rounded-full px-8 sm:px-10 py-3 sm:py-4 text-base sm:text-lg font-bold uppercase transition-all bg-white text-brand-darkBlue hover:bg-brand-darkBlue hover:text-white shadow-lg hover:shadow-2xl"
           >
             Get In Touch
           </a>

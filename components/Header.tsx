@@ -64,12 +64,12 @@ export const Header: React.FC = () => {
           boxShadow: '0 4px 20px rgba(0, 149, 255, 0.6), 0 2px 8px rgba(0, 149, 255, 0.8)'
         }}
       >
-        <div className="flex items-center justify-between px-4 md:px-8 lg:px-16 py-0">
-          <Link to="/" className="flex items-center flex-shrink-0 -ml-2 md:-ml-4 -my-4 md:-my-5">
+        <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16 py-0">
+          <Link to="/" className="flex items-center flex-shrink-0 -ml-1 sm:-ml-2 md:-ml-4 -my-3 sm:-my-4 md:-my-5">
             <img
               src={logo}
               alt="M E Stewart Contractors"
-              className="h-40 md:h-48 w-auto object-contain leading-none"
+              className="h-28 sm:h-32 md:h-40 lg:h-48 w-auto object-contain leading-none"
             />
           </Link>
 
@@ -108,14 +108,14 @@ export const Header: React.FC = () => {
         </div>
 
         {mobileMenuOpen && (
-          <div className="absolute top-full left-0 w-full bg-white shadow-xl md:hidden">
-            <nav className="flex flex-col items-center py-8 gap-6">
+          <div className="absolute top-full left-0 w-full bg-white shadow-xl md:hidden z-50">
+            <nav className="flex flex-col items-center py-6 sm:py-8 gap-4 sm:gap-6">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   to={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-lg font-bold uppercase text-brand-darkBlue hover:text-brand-blue transition-colors"
+                  className="text-base sm:text-lg font-bold uppercase text-brand-darkBlue hover:text-brand-blue transition-colors"
                 >
                   {link.name}
                 </Link>
@@ -123,7 +123,7 @@ export const Header: React.FC = () => {
               <Link
                 to="/contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="mt-4 px-8 py-3 bg-brand-blue text-white font-bold uppercase rounded-full hover:bg-brand-darkBlue transition-colors"
+                className="mt-2 sm:mt-4 px-6 sm:px-8 py-2.5 sm:py-3 bg-brand-blue text-white text-sm sm:text-base font-bold uppercase rounded-full hover:bg-brand-darkBlue transition-colors"
               >
                 Get Quote
               </Link>

@@ -55,33 +55,33 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex h-full flex-col justify-center px-6 pt-24 sm:px-12 sm:pt-0 lg:px-24">
+      <div className="relative z-10 flex h-full flex-col justify-center px-4 pt-24 sm:px-8 sm:pt-0 lg:px-24">
         <div className="max-w-4xl">
-          <div className="mb-6 flex flex-wrap items-center gap-4">
-            <span className="text-xs sm:text-sm font-bold uppercase tracking-widest text-brand-blue bg-white rounded-full px-4 py-1 w-fit shadow-md">
+          <div className="mb-4 sm:mb-6 flex flex-wrap items-center gap-2 sm:gap-4">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wide sm:tracking-widest text-brand-blue bg-white rounded-full px-3 py-1 sm:px-4 w-fit shadow-md">
               Established Excellence
             </span>
-            <span className="flex items-center gap-1 text-xs sm:text-sm font-bold uppercase tracking-widest text-white/90 bg-black/30 px-4 py-1 rounded-full backdrop-blur-sm">
-              <MapPin size={14} aria-hidden="true" /> Serving Deal, Kent & Surrounds
+            <span className="flex items-center gap-1 text-xs sm:text-sm font-bold uppercase tracking-wide sm:tracking-widest text-white/90 bg-black/30 px-3 py-1 sm:px-4 rounded-full backdrop-blur-sm">
+              <MapPin size={14} aria-hidden="true" className="flex-shrink-0" /> <span className="whitespace-nowrap">Serving Deal, Kent & Surrounds</span>
             </span>
           </div>
 
-          <h1 className="mb-6 text-4xl font-bold uppercase leading-tight text-white sm:text-5xl md:text-7xl drop-shadow-lg">
+          <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold uppercase leading-tight text-white drop-shadow-lg">
             Experienced Builders <br />
             Based in <span className="text-blue-400">Deal</span><br />
             Covering Dover & Beyond
           </h1>
 
-          <div className="mb-10 max-w-xl rounded-2xl bg-black/60 p-6 backdrop-blur-md border border-white/10 shadow-2xl">
-            <p className="text-lg text-white font-light leading-relaxed sm:text-xl">
+          <div className="mb-6 sm:mb-8 lg:mb-10 max-w-xl rounded-2xl bg-black/60 p-4 sm:p-6 backdrop-blur-md border border-white/10 shadow-2xl">
+            <p className="text-base sm:text-lg lg:text-xl text-white font-light leading-relaxed">
               Master craftsmanship for projects across Deal, Dover, and Kent. Building with precision, integrity, and bold design.
             </p>
           </div>
 
-          <div ref={buttonRef} className="flex flex-col sm:flex-row gap-4">
+          <div ref={buttonRef} className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <Link
               to="/contact"
-              className={`group flex items-center justify-center gap-2 bg-brand-blue px-8 py-4 text-lg font-bold uppercase tracking-wide text-white transition-all lg:hover:bg-white lg:hover:text-brand-blue rounded-full shadow-lg lg:hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-darkBlue ${isVisible ? 'mobile-active-bg-white' : ''}`}
+              className={`group flex items-center justify-center gap-2 bg-brand-blue px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold uppercase tracking-wide text-white transition-all lg:hover:bg-white lg:hover:text-brand-blue rounded-full shadow-lg lg:hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-darkBlue ${isVisible ? 'mobile-active-bg-white' : ''}`}
               aria-label="Get a free quote for your building project"
             >
               Get a Quote
@@ -89,7 +89,7 @@ export const Hero: React.FC = () => {
             </Link>
             <Link
               to="/projects"
-              className={`flex items-center justify-center gap-2 border-2 border-white px-8 py-4 text-lg font-bold uppercase tracking-wide text-white transition-all lg:hover:bg-white lg:hover:text-brand-darkBlue rounded-full lg:hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-darkBlue ${isVisible ? 'mobile-active-border-white' : ''}`}
+              className={`flex items-center justify-center gap-2 border-2 border-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold uppercase tracking-wide text-white transition-all lg:hover:bg-white lg:hover:text-brand-darkBlue rounded-full lg:hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-darkBlue ${isVisible ? 'mobile-active-border-white' : ''}`}
               aria-label="View our portfolio of completed projects"
             >
               View Portfolio

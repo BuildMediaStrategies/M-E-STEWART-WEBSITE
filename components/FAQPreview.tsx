@@ -19,24 +19,24 @@ const faqs = [
 
 export const FAQPreview: React.FC = () => {
   return (
-    <section className="py-16 px-6 sm:px-12 lg:px-24 bg-slate-50">
+    <section className="py-12 sm:py-16 px-4 sm:px-6 md:px-12 lg:px-24 bg-slate-50">
       <div className="mx-auto max-w-5xl">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold uppercase text-brand-darkBlue sm:text-5xl">
+        <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-brand-darkBlue">
             Frequently Asked <span className="inline-block relative">Questions<div className="h-1 bg-brand-blue mt-2 absolute left-0 right-0"></div></span>
           </h2>
         </div>
 
-        <div className="space-y-6 mb-10">
+        <div className="space-y-4 sm:space-y-6 mb-8 sm:mb-10">
           {faqs.map((faq, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-lg p-6 shadow-md lg:hover:shadow-lg transition-shadow duration-300"
+              className="bg-white rounded-lg p-4 sm:p-6 shadow-md lg:hover:shadow-lg transition-shadow duration-300"
             >
-              <h3 className="text-lg font-bold text-brand-darkBlue mb-2">
+              <h3 className="text-base sm:text-lg font-bold text-brand-darkBlue mb-2">
                 {faq.question}
               </h3>
-              <p className="text-brand-slate">
+              <p className="text-sm sm:text-base text-brand-slate">
                 {faq.answer}
               </p>
             </div>
@@ -46,10 +46,10 @@ export const FAQPreview: React.FC = () => {
         <div className="text-center">
           <Link
             to="/faqs"
-            className="inline-flex items-center text-white bg-brand-blue lg:hover:bg-brand-darkBlue px-8 py-3 rounded-full font-bold uppercase tracking-wide transition-colors shadow-md"
+            className="inline-flex items-center text-white bg-brand-blue lg:hover:bg-brand-darkBlue px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base rounded-full font-bold uppercase tracking-wide transition-colors shadow-md"
           >
             View All FAQs
-            <ChevronRight size={20} className="ml-2" />
+            <ChevronRight size={18} className="sm:w-5 sm:h-5 ml-2" />
           </Link>
         </div>
       </div>

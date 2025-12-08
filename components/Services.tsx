@@ -65,7 +65,7 @@ export const Services: React.FC = () => {
   }, []);
 
   return (
-    <section id="services" className="bg-white py-20 px-6 sm:px-12 lg:px-24">
+    <section id="services" className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-24">
       <style>{`
         @media (max-width: 1023px) {
           .mobile-card-active {
@@ -80,32 +80,32 @@ export const Services: React.FC = () => {
         }
       `}</style>
       <div className="mx-auto max-w-7xl">
-        <div className="mb-16 text-center">
-          <h2 className="mb-4 text-4xl font-bold uppercase text-brand-darkBlue sm:text-5xl">
+        <div className="mb-10 sm:mb-12 lg:mb-16 text-center">
+          <h2 className="mb-4 text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-brand-darkBlue">
             Our <span className="inline-block relative">Expertise<div className="h-1 bg-brand-blue mt-2 absolute left-0 right-0"></div></span>
           </h2>
-          <p className="mt-8 text-lg text-brand-slate max-w-2xl mx-auto">
+          <p className="mt-6 sm:mt-8 text-base sm:text-lg text-brand-slate max-w-2xl mx-auto px-4">
             We specialize in a wide range of construction services, delivering superior results on time and within budget.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <article
               key={index}
               ref={(el) => (cardRefs.current[index] = el)}
-              className={`group relative border border-gray-200 bg-white p-8 transition-all lg:hover:-translate-y-2 lg:hover:shadow-xl lg:hover:border-brand-blue ${
+              className={`group relative border border-gray-200 bg-white p-6 sm:p-8 rounded-xl sm:rounded-2xl transition-all lg:hover:-translate-y-2 lg:hover:shadow-xl lg:hover:border-brand-blue ${
                 visibleCards.has(index) ? 'mobile-card-active' : ''
               }`}
               aria-label={`${service.title} service`}
             >
-              <div className="mobile-icon-bg mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-brand-grey text-brand-blue lg:group-hover:bg-brand-blue lg:group-hover:text-white transition-colors" aria-hidden="true">
-                <service.icon size={28} />
+              <div className="mobile-icon-bg mb-4 sm:mb-6 flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-full bg-brand-grey text-brand-blue lg:group-hover:bg-brand-blue lg:group-hover:text-white transition-colors" aria-hidden="true">
+                <service.icon size={24} className="sm:w-7 sm:h-7" />
               </div>
-              <h3 className="mb-3 text-2xl font-bold uppercase text-brand-darkBlue">
+              <h3 className="mb-2 sm:mb-3 text-lg sm:text-xl lg:text-2xl font-bold uppercase text-brand-darkBlue">
                 {service.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 {service.description}
               </p>
             </article>

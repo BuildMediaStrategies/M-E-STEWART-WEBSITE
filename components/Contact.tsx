@@ -3,55 +3,55 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   return (
-    <section id="contact" className="bg-white py-20 px-6 sm:px-12 lg:px-24">
+    <section id="contact" className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-24">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-16 text-center">
-           <h2 className="text-4xl font-bold uppercase text-brand-darkBlue sm:text-5xl">
+        <div className="mb-10 sm:mb-12 lg:mb-16 text-center">
+           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-brand-darkBlue">
             Contact <span className="inline-block relative">Us<div className="h-1 bg-brand-blue mt-2 absolute left-0 right-0"></div></span>
            </h2>
-           <p className="mt-6 text-brand-slate max-w-xl mx-auto">
+           <p className="mt-4 sm:mt-6 text-sm sm:text-base text-brand-slate max-w-xl mx-auto px-4">
              Based in Deal, serving the entire Kent region.
            </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+
           {/* Contact Info */}
-          <div className="bg-brand-darkBlue text-white p-10 rounded-3xl flex flex-col justify-center h-full">
-            <h2 className="text-3xl font-bold uppercase mb-6">Let's Build Together</h2>
-            <p className="text-blue-200 mb-12 text-lg font-light">
+          <div className="bg-brand-darkBlue text-white p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl flex flex-col justify-center h-full">
+            <h2 className="text-2xl sm:text-3xl font-bold uppercase mb-4 sm:mb-6">Let's Build Together</h2>
+            <p className="text-blue-200 mb-8 sm:mb-12 text-base sm:text-lg font-light">
               Ready to start your next project? Contact M E Stewart today for a consultation. We pride ourselves on transparent communication and reliable service throughout Kent.
             </p>
-            
-            <div className="space-y-8">
-              <div className="flex items-start gap-4">
-                <div className="bg-blue-600 p-3 rounded-full">
-                  <Phone size={24} aria-hidden="true" />
+
+            <div className="space-y-6 sm:space-y-8">
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="bg-blue-600 p-2.5 sm:p-3 rounded-full flex-shrink-0">
+                  <Phone size={20} className="sm:w-6 sm:h-6" aria-hidden="true" />
                 </div>
                 <div>
-                  <h4 className="font-bold uppercase text-lg">Call Us</h4>
-                  <a href="tel:07738520388" className="text-blue-200 hover:text-white transition-colors">07738 520388</a>
+                  <h4 className="font-bold uppercase text-base sm:text-lg">Call Us</h4>
+                  <a href="tel:07738520388" className="text-sm sm:text-base text-blue-200 hover:text-white transition-colors">07738 520388</a>
                   <p className="text-xs text-blue-300">Mon-Fri, 8am - 6pm</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="bg-blue-600 p-3 rounded-full">
-                  <Mail size={24} aria-hidden="true" />
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="bg-blue-600 p-2.5 sm:p-3 rounded-full flex-shrink-0">
+                  <Mail size={20} className="sm:w-6 sm:h-6" aria-hidden="true" />
                 </div>
-                <div>
-                  <h4 className="font-bold uppercase text-lg">Email Us</h4>
-                  <a href="mailto:markstewart21@sky.com" className="text-blue-200 hover:text-white transition-colors break-all">markstewart21@sky.com</a>
+                <div className="min-w-0">
+                  <h4 className="font-bold uppercase text-base sm:text-lg">Email Us</h4>
+                  <a href="mailto:markstewart21@sky.com" className="text-sm sm:text-base text-blue-200 hover:text-white transition-colors break-all">markstewart21@sky.com</a>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="bg-blue-600 p-3 rounded-full">
-                  <MapPin size={24} aria-hidden="true" />
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="bg-blue-600 p-2.5 sm:p-3 rounded-full flex-shrink-0">
+                  <MapPin size={20} className="sm:w-6 sm:h-6" aria-hidden="true" />
                 </div>
                 <div>
-                  <h4 className="font-bold uppercase text-lg">Visit Us</h4>
-                  <address className="text-blue-200 not-italic">
+                  <h4 className="font-bold uppercase text-base sm:text-lg">Visit Us</h4>
+                  <address className="text-sm sm:text-base text-blue-200 not-italic">
                     High Street<br/>
                     Deal, Kent<br/>
                     CT14 6BB
@@ -62,10 +62,10 @@ export const Contact: React.FC = () => {
           </div>
 
           {/* Form */}
-          <div className="bg-brand-grey text-brand-slate p-10 rounded-3xl shadow-lg border border-gray-100">
-            <h3 className="text-2xl font-bold uppercase text-brand-darkBlue mb-6">Send a Message</h3>
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-brand-grey text-brand-slate p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl shadow-lg border border-gray-100">
+            <h3 className="text-xl sm:text-2xl font-bold uppercase text-brand-darkBlue mb-4 sm:mb-6">Send a Message</h3>
+            <form className="space-y-4 sm:space-y-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div>
                   <label htmlFor="contact-first-name" className="block text-sm font-bold uppercase text-gray-500 mb-2">First Name *</label>
                   <input
