@@ -61,14 +61,6 @@ export const Header: React.FC = () => {
             transform: scaleX(1);
           }
         }
-
-        .logo-img {
-          image-rendering: high-quality;
-          image-rendering: -webkit-optimize-contrast;
-          backface-visibility: hidden;
-          transform: translateZ(0);
-          -webkit-font-smoothing: subpixel-antialiased;
-        }
       `}</style>
 
       <header
@@ -77,14 +69,14 @@ export const Header: React.FC = () => {
           boxShadow: '0 4px 20px rgba(0, 149, 255, 0.6), 0 2px 8px rgba(0, 149, 255, 0.8)'
         }}
       >
-        <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16 py-3">
+        <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16 py-3 h-[96px]">
           {/* Logo */}
-          <Link to="/" className="flex items-center py-1">
+          <Link to="/" className="flex items-center max-h-full overflow-visible">
             <img
               src="/assets/chatgpt_image_dec_7,_2025,_07_24_14_pm.png"
               alt="M E Stewart Contractors"
               loading="eager"
-              className="logo-img h-20 sm:h-24 md:h-28 max-h-full object-scale-down block"
+              className="block h-full w-auto max-h-[88px]"
             />
           </Link>
 
