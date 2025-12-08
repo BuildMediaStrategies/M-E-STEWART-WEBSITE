@@ -62,14 +62,13 @@ export const Header: React.FC = () => {
           boxShadow: '0 4px 20px rgba(0, 149, 255, 0.6), 0 2px 8px rgba(0, 149, 255, 0.8)'
         }}
       >
-        <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16 py-2">
-          {/* Logo */}
+        <div className="flex items-center justify-between px-4 md:px-8 lg:px-16 py-3">
+          {/* Logo — back to working version */}
           <Link to="/" className="flex items-center">
             <img
               src={logo}
-              alt="M E Stewart Builders"
-              style={{ maxHeight: '70px', height: 'auto', width: 'auto' }}
-              className="block object-contain"
+              alt="M E Stewart Contractors"
+              className="w-auto h-20 sm:h-24 md:h-28 object-contain"
             />
           </Link>
 
