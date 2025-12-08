@@ -36,8 +36,10 @@ const projects: Project[] = [
   {
     title: "Victorian Property Restoration",
     location: "Dover, Kent",
-    img: "/assets/mark_stewart_house_refurb_image_before.jpeg",
-    description: "Full restoration of a Victorian townhouse, preserving period features while modernizing systems and amenities."
+    beforeImg: "/assets/mark_stewart_house_refurb_image_before.jpeg",
+    afterImg: "/assets/mark_stewart_house_refurb_after.jpeg",
+    description: "Full restoration of a Victorian townhouse, preserving period features while modernizing systems and amenities.",
+    isBeforeAfter: true
   },
   {
     title: "Luxury Kitchen & Living",
