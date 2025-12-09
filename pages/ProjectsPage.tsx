@@ -15,14 +15,14 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Kitchen Renovation - Before & After",
+    title: "Living Room Renovation - Before & After",
     location: "Kent",
-    beforeImg: "/assets/image.png",
-    afterImg: "/assets/image copy.png",
-    description: "Complete kitchen transformation featuring modern tile work, custom cabinetry, premium lighting, and high-quality finishes. A stunning example of our attention to detail and craftsmanship.",
+    beforeImg: "/assets/before-after-living-room-refurb.jpg",
+    afterImg: "/assets/before-after-living-room-refurb2.jpg",
+    description: "Complete living room transformation featuring modern finishes, premium lighting, and high-quality craftsmanship. A stunning example of our attention to detail and interior renovation expertise.",
     isBeforeAfter: true,
-    beforeAlt: "Kitchen renovation before - Kent property",
-    afterAlt: "Kitchen extension completed in Kent home"
+    beforeAlt: "Living room renovation before - Kent property",
+    afterAlt: "Living room renovation completed in Kent home"
   },
   {
     title: "Staircase Renovation - Before & After",

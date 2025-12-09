@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const projects = [
   {
-    title: "Kitchen Renovation",
+    title: "Living Room Renovation",
     category: "Kent",
-    img: "/assets/image copy.png",
-    alt: "Modern kitchen renovation completed in Kent home"
+    img: "/assets/before-after-living-room-refurb2.jpg",
+    alt: "Modern living room renovation completed in Kent home"
   },
   {
     title: "Staircase Renovation",
