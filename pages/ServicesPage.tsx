@@ -67,6 +67,13 @@ const services = [
     alt: "Architectural blueprints and structural design"
   },
   {
+    icon: Clock,
+    title: "Emergency Builder Service",
+    description: "24/7 emergency building services for urgent repairs, storm damage, and structural issues requiring immediate attention.",
+    img: "/assets/chatgpt_image_dec_9,_2025,_10_04_46_am.png",
+    alt: "Emergency building repair service"
+  },
+  {
     icon: Hammer,
     title: "Demolition",
     description: "Safe and efficient demolition services for full or partial building removal, including site clearance and waste disposal.",
@@ -128,13 +135,6 @@ const services = [
     description: "Beautiful garden studio constructions for home offices, art studios, gyms, or guest accommodations.",
     img: "/assets/chatgpt_image_dec_9,_2025,_10_11_48_am.png",
     alt: "Modern garden studio office space"
-  },
-  {
-    icon: Clock,
-    title: "Emergency Builder Service",
-    description: "24/7 emergency building services for urgent repairs, storm damage, and structural issues requiring immediate attention.",
-    img: "/assets/chatgpt_image_dec_9,_2025,_10_04_46_am.png",
-    alt: "Emergency building repair service"
   }
 ];
 
