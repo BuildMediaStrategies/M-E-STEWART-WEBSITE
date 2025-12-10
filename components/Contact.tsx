@@ -52,8 +52,7 @@ export const Contact: React.FC = () => {
                 <div>
                   <h4 className="font-bold uppercase text-base sm:text-lg">Visit Us</h4>
                   <address className="text-sm sm:text-base text-blue-200 not-italic">
-                    High Street<br/>
-                    Deal, Kent<br/>
+                    Betteshanger, Deal, Kent<br/>
                     CT14 0LT
                   </address>
                 </div>
