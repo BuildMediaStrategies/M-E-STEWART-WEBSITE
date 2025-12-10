@@ -54,7 +54,7 @@ export const Contact: React.FC = () => {
                   <address className="text-sm sm:text-base text-blue-200 not-italic">
                     High Street<br/>
                     Deal, Kent<br/>
-                    CT14 6BB
+                    CT14 0LT
                   </address>
                 </div>
               </div>
