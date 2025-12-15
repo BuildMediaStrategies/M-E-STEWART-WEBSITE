@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mestewartbuilders.co.uk/sitemap.xml
+Sitemap: https://mestewartbuildingcontractorsltd.uk/sitemap.xml
