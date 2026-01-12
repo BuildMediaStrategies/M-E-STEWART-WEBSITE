@@ -2,15 +2,25 @@ import React from 'react';
 import { MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const areas = [
+const primaryAreas = [
   {
     name: "Deal",
-    description: "Historic seaside town with period properties and modern developments"
+    description: "Historic seaside town with period properties and modern developments. Expert local builders serving Deal town centre, Upper Deal and surrounding areas.",
+    link: "/builders-deal"
   },
   {
     name: "Walmer",
-    description: "Coastal village with Victorian and Edwardian architecture"
+    description: "Coastal village with Victorian and Edwardian architecture. Professional building services near Walmer Castle and throughout the CT14 area.",
+    link: "/builders-walmer"
   },
+  {
+    name: "Sholden",
+    description: "Quiet village setting with diverse housing stock. Experienced builders for extensions, renovations and structural works.",
+    link: "/builders-sholden"
+  }
+];
+
+const additionalAreas = [
   {
     name: "Dover",
     description: "Major port town featuring commercial and residential projects"
@@ -20,12 +30,20 @@ const areas = [
     description: "Medieval town with conservation areas and listed buildings"
   },
   {
-    name: "Canterbury",
-    description: "Cathedral city with heritage properties and new builds"
+    name: "Kingsdown",
+    description: "Coastal village with stunning sea views and period properties"
   },
   {
-    name: "Folkestone",
-    description: "Creative quarter and coastal regeneration projects"
+    name: "St Margareats",
+    description: "Traditional village with family homes and local character"
+  },
+  {
+    name: "Worth",
+    description: "Rural village setting with modern and traditional builds"
+  },
+  {
+    name: "Great Mongeham",
+    description: "Village location with excellent transport links"
   }
 ];
 
@@ -46,13 +64,49 @@ export const AreasPage: React.FC = () => {
 
       <section className="py-20 px-6 sm:px-12 lg:px-24 bg-white">
         <div className="mx-auto max-w-7xl">
+          <h2 className="text-4xl font-bold uppercase text-brand-darkBlue mb-4 text-center">
+            Primary Service Areas
+          </h2>
+          <div className="mx-auto h-1 w-24 bg-brand-blue mb-12"></div>
+
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3 mb-16">
+            {primaryAreas.map((area, index) => (
+              <Link
+                to={area.link}
+                key={index}
+                className="group relative border-2 border-brand-blue bg-gradient-to-br from-brand-blue/5 to-white p-8 transition-all duration-300 lg:hover:-translate-y-3 lg:hover:shadow-2xl rounded-lg"
+                style={{
+                  animation: `fade-in-up 0.6s ease-out ${index * 0.1}s both`
+                }}
+              >
+                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-brand-blue text-white lg:group-hover:scale-110 transition-all duration-300">
+                  <MapPin size={32} />
+                </div>
+                <h3 className="mb-4 text-2xl font-bold uppercase text-brand-darkBlue">
+                  {area.name}
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  {area.description}
+                </p>
+                <span className="text-brand-blue font-semibold lg:group-hover:underline">
+                  View {area.name} Services →
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          <h2 className="text-3xl font-bold uppercase text-brand-darkBlue mb-4 text-center mt-12">
+            Additional Coverage Areas
+          </h2>
+          <div className="mx-auto h-1 w-20 bg-brand-blue mb-12"></div>
+
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {areas.map((area, index) => (
+            {additionalAreas.map((area, index) => (
               <div
                 key={index}
                 className="group relative border-2 border-gray-200 bg-white p-8 transition-all duration-300 lg:hover:-translate-y-3 lg:hover:shadow-2xl lg:hover:border-brand-blue rounded-lg"
                 style={{
-                  animation: `fade-in-up 0.6s ease-out ${index * 0.1}s both`
+                  animation: `fade-in-up 0.6s ease-out ${(index + 3) * 0.1}s both`
                 }}
               >
                 <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-brand-grey text-brand-blue lg:group-hover:bg-brand-blue lg:group-hover:text-white transition-all duration-300 lg:group-hover:scale-110">

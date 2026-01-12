@@ -62,15 +62,27 @@
   </url>
   <url>
     <loc>https://mestewartbuildingcontractorsltd.uk/builders-deal</loc>
-    <lastmod>2025-12-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://mestewartbuildingcontractorsltd.uk/builders-walmer</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://mestewartbuildingcontractorsltd.uk/builders-sholden</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://mestewartbuildingcontractorsltd.uk/builders-dover</loc>
     <lastmod>2025-12-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mestewartbuildingcontractorsltd.uk/privacy-policy</loc>

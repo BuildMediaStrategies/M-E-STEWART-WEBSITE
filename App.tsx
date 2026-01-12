@@ -16,6 +16,9 @@ import { FAQsPage } from './pages/FAQsPage';
 import { DealPage } from './pages/DealPage';
 import { DoverPage } from './pages/DoverPage';
 import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
+import { BuildersDealPage } from './pages/BuildersDealPage';
+import { BuildersWalmerPage } from './pages/BuildersWalmerPage';
+import { BuildersSholdenPage } from './pages/BuildersSholdenPage';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -45,7 +48,9 @@ function App() {
             <Route path="/why-choose-us" element={<WhyChoosePage />} />
             <Route path="/testimonials" element={<TestimonialsPage />} />
             <Route path="/faqs" element={<FAQsPage />} />
-            <Route path="/builders-deal" element={<DealPage />} />
+            <Route path="/builders-deal" element={<BuildersDealPage />} />
+            <Route path="/builders-walmer" element={<BuildersWalmerPage />} />
+            <Route path="/builders-sholden" element={<BuildersSholdenPage />} />
             <Route path="/builders-dover" element={<DoverPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           </Routes>

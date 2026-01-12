@@ -62,19 +62,18 @@ export const Hero: React.FC = () => {
               Established Excellence
             </span>
             <span className="flex items-center gap-1 text-xs sm:text-sm font-bold uppercase tracking-wide sm:tracking-widest text-white/90 bg-black/30 px-3 py-1 sm:px-4 rounded-full backdrop-blur-sm">
-              <MapPin size={14} aria-hidden="true" className="flex-shrink-0" /> <span className="whitespace-nowrap">Serving Deal, Kent & Surrounds</span>
+              <MapPin size={14} aria-hidden="true" className="flex-shrink-0" /> <span className="whitespace-nowrap">Deal • Walmer • Sholden</span>
             </span>
           </div>
 
           <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold uppercase leading-tight text-white drop-shadow-lg">
-            Experienced Builders <br />
-            Based in <span className="text-blue-400">Deal</span><br />
-            Covering Dover & Beyond
+            Professional Builders <br />
+            Serving <span className="text-blue-400">Deal, Walmer & Sholden</span>
           </h1>
 
           <div className="mb-6 sm:mb-8 lg:mb-10 max-w-xl rounded-2xl bg-black/60 p-4 sm:p-6 backdrop-blur-md border border-white/10 shadow-2xl">
             <p className="text-base sm:text-lg lg:text-xl text-white font-light leading-relaxed">
-              Master craftsmanship for projects across Deal, Dover, and Kent. Building with precision, integrity, and bold design.
+              M E Stewart Building Contractors deliver expert extensions, renovations and structural works throughout Deal, Walmer, Sholden and surrounding Kent areas. Local builders with proven craftsmanship and reliability.
             </p>
           </div>
 

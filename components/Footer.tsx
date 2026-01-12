@@ -25,11 +25,14 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="text-gray-400 text-sm text-center md:text-right">
-            <p className="text-white font-semibold mb-2">Serving Deal, Dover & the wider Kent area</p>
-            <p>&copy; {new Date().getFullYear()} M E Stewart. All rights reserved.</p>
+            <p className="text-white font-semibold mb-2">M E Stewart Building Contractors LTD</p>
+            <p className="text-white mb-1">Deal, Kent CT14</p>
+            <p className="mb-1"><a href="tel:07885930284" className="hover:text-white transition-colors">Tel: 07885 930284</a></p>
+            <p className="mb-2"><a href="mailto:markstewart21@sky.com" className="hover:text-white transition-colors">markstewart21@sky.com</a></p>
+            <p className="text-xs mb-2">Serving Deal, Walmer, Sholden & surrounding Kent areas</p>
+            <p>&copy; {new Date().getFullYear()} M E Stewart Building Contractors. All rights reserved.</p>
             <nav className="flex gap-4 mt-2 justify-center md:justify-end" aria-label="Footer navigation">
                <Link to="/privacy-policy" className="footer-link lg:hover:text-white transition-colors">Privacy Policy</Link>
-               <a href="mailto:markstewart21@sky.com" className="footer-link lg:hover:text-white transition-colors">Contact</a>
             </nav>
           </div>
         </div>
