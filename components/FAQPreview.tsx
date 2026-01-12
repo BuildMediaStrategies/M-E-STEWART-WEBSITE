@@ -5,15 +5,15 @@ import { ChevronRight } from 'lucide-react';
 const faqs = [
   {
     question: "What areas do you cover?",
-    answer: "We primarily serve Deal, Dover, Sandwich, and surrounding areas across Kent."
+    answer: "We are based in Deal, Kent and serve the entire Deal area including Walmer, Sholden and surrounding residential zones."
   },
   {
     question: "How long does a typical project take?",
-    answer: "Project timelines vary depending on scope. Small renovations take 2-4 weeks, while larger builds can take 3-6 months."
+    answer: "Project timelines vary depending on scope. Small renovations in Deal properties take 2-4 weeks, while larger builds can take 3-6 months."
   },
   {
     question: "Do you provide free quotes?",
-    answer: "Yes, we offer free, no-obligation quotes for all projects. Contact us to schedule a consultation."
+    answer: "Yes, we offer free, no-obligation quotes for all projects throughout Deal, Kent. Contact us to schedule a consultation."
   }
 ];
 

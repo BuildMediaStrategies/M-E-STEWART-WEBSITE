@@ -10,7 +10,7 @@ export const Contact: React.FC = () => {
             Contact <span className="inline-block relative">Us<div className="h-1 bg-brand-blue mt-2 absolute left-0 right-0"></div></span>
            </h2>
            <p className="mt-4 sm:mt-6 text-sm sm:text-base text-brand-slate max-w-xl mx-auto px-4">
-             Based in Deal, serving the entire Kent region.
+             Based in Deal, Kent, serving the full Deal area.
            </p>
         </div>
 
@@ -20,7 +20,7 @@ export const Contact: React.FC = () => {
           <div className="bg-brand-darkBlue text-white p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl flex flex-col justify-center h-full">
             <h2 className="text-2xl sm:text-3xl font-bold uppercase mb-4 sm:mb-6">Let's Build Together</h2>
             <p className="text-blue-200 mb-8 sm:mb-12 text-base sm:text-lg font-light">
-              Ready to start your next project? Contact M E Stewart today for a consultation. We pride ourselves on transparent communication and reliable service throughout Kent.
+              Ready to start your next project? Contact M E Stewart today for a consultation. We pride ourselves on transparent communication and reliable service throughout Deal, Kent.
             </p>
 
             <div className="space-y-6 sm:space-y-8">

@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 const projects = [
   {
     title: "Living Room Renovation",
-    category: "Kent",
+    category: "Deal, Kent",
     img: "/assets/before-after-living-room-refurb2.jpg",
-    alt: "Modern living room renovation completed in Kent home"
+    alt: "Modern living room renovation completed in Deal home"
   },
   {
     title: "Staircase Renovation",
-    category: "Kent",
+    category: "Deal, Kent",
     img: "/assets/mark_stewart_conversion_stairs_after.webp",
-    alt: "Staircase conversion project in Kent property"
+    alt: "Staircase conversion project in Deal property"
   },
   {
     title: "Bathroom Refurbishment",
@@ -22,9 +22,9 @@ const projects = [
   },
   {
     title: "Full House Renovation",
-    category: "Canterbury, Kent",
+    category: "Deal, Kent",
     img: "/assets/mark_steward_conversion_after.webp",
-    alt: "House renovation project completed in Canterbury"
+    alt: "House renovation project completed in Deal"
   }
 ];
 
@@ -96,7 +96,7 @@ export const Portfolio: React.FC = () => {
              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-brand-darkBlue">
               Featured <span className="inline-block relative">Projects<div className="h-1 bg-brand-blue mt-2 absolute left-0 right-0"></div></span>
             </h2>
-            <p className="mt-4 sm:mt-6 text-brand-slate text-sm sm:text-base">Delivering excellence across Kent.</p>
+            <p className="mt-4 sm:mt-6 text-brand-slate text-sm sm:text-base">Delivering excellence across Deal, Kent.</p>
           </div>
           <Link
             to="/projects"

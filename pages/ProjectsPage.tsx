@@ -16,29 +16,29 @@ type Project = {
 const projects: Project[] = [
   {
     title: "Living Room Renovation - Before & After",
-    location: "Kent",
+    location: "Deal, Kent",
     beforeImg: "/assets/before-after-living-room-refurb.jpg",
     afterImg: "/assets/before-after-living-room-refurb2.jpg",
-    description: "Complete living room transformation featuring modern finishes, premium lighting, and high-quality craftsmanship. A stunning example of our attention to detail and interior renovation expertise.",
+    description: "Complete living room transformation in Deal featuring modern finishes, premium lighting, and high-quality craftsmanship. A stunning example of our attention to detail and interior renovation expertise.",
     isBeforeAfter: true,
-    beforeAlt: "Living room renovation before - Kent property",
-    afterAlt: "Living room renovation completed in Kent home"
+    beforeAlt: "Living room renovation before - Deal property",
+    afterAlt: "Living room renovation completed in Deal home"
   },
   {
     title: "Staircase Renovation - Before & After",
-    location: "Kent",
+    location: "Deal, Kent",
     beforeImg: "/assets/mark_stewart_conversion_stairs_before.webp",
     afterImg: "/assets/mark_stewart_conversion_stairs_after.webp",
-    description: "Complete staircase transformation from raw construction to elegant finished design. Features custom white painted posts, dark carpeted treads, and modern glass balustrades creating a sophisticated interior space.",
+    description: "Complete staircase transformation from raw construction to elegant finished design in Deal. Features custom white painted posts, dark carpeted treads, and modern glass balustrades creating a sophisticated interior space.",
     isBeforeAfter: true,
-    beforeAlt: "Staircase conversion before - Kent property",
-    afterAlt: "Loft conversion staircase completed in Kent"
+    beforeAlt: "Staircase conversion before - Deal property",
+    afterAlt: "Loft conversion staircase completed in Deal"
   },
   {
     title: "Bathroom Refurbishment",
     location: "Deal, Kent",
     img: "/assets/mark_stewart_bathroom_refurb_.jpeg",
-    description: "Complete bathroom transformation featuring modern fixtures, premium tiling, elegant lighting, and high-quality finishes. A sophisticated space that combines style with functionality.",
+    description: "Complete bathroom transformation in Deal featuring modern fixtures, premium tiling, elegant lighting, and high-quality finishes. A sophisticated space that combines style with functionality.",
     alt: "Bathroom refurbishment completed in Deal"
   },
   {
@@ -46,24 +46,24 @@ const projects: Project[] = [
     location: "Deal, Kent",
     beforeImg: "/assets/mark_stewart_house_refurb_image_before.jpeg",
     afterImg: "/assets/mark_stewart_house_refurb_after.jpeg",
-    description: "Complete bathroom refurbishment featuring new fixtures, tiling, and finishes.",
+    description: "Complete bathroom refurbishment in Deal featuring new fixtures, tiling, and finishes.",
     isBeforeAfter: true,
     beforeAlt: "Bathroom refurbishment before - Deal home",
     afterAlt: "Bathroom renovation completed in Deal property"
   },
   {
     title: "Luxury Kitchen & Living",
-    location: "Walmer, Kent",
+    location: "Deal, Kent",
     img: "/assets/mark_stewart_kitchen_refurb_.jpeg",
-    description: "High-end kitchen renovation with bespoke cabinetry, premium appliances, and designer finishes.",
-    alt: "Luxury kitchen renovation in Walmer Kent"
+    description: "High-end kitchen renovation in Deal with bespoke cabinetry, premium appliances, and designer finishes.",
+    alt: "Luxury kitchen renovation in Deal, Kent"
   },
   {
     title: "Full House Renovation - Before & After",
     location: "Deal, Kent",
     beforeImg: "/assets/mark_stewart_conversion_job_before.webp",
     afterImg: "/assets/mark_steward_conversion_after.webp",
-    description: "Complete house renovation featuring updated finishes, fixtures, and interior improvements throughout.",
+    description: "Complete house renovation in Deal featuring updated finishes, fixtures, and interior improvements throughout.",
     isBeforeAfter: true,
     beforeAlt: "House renovation before - Deal property",
     afterAlt: "Full house renovation completed in Deal"
@@ -76,11 +76,11 @@ export const ProjectsPage: React.FC = () => {
       <div className="bg-gradient-to-br from-brand-darkBlue to-brand-blue text-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-24">
         <div className="mx-auto max-w-7xl text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold uppercase mb-4 sm:mb-6 animate-fade-in">
-            Our Projects in Deal, Dover & Kent
+            Our Projects in Deal, Kent
           </h1>
           <div className="mx-auto h-1 w-24 sm:w-32 bg-white mb-4 sm:mb-6"></div>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90 px-4">
-            Explore our portfolio of completed projects across Deal, Dover, and Kent. Each build reflects our commitment to quality, craftsmanship, and client satisfaction.
+            Explore our portfolio of completed projects throughout Deal, Kent. Each build reflects our commitment to quality, craftsmanship, and client satisfaction across the Deal area.
           </p>
         </div>
       </div>

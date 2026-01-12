@@ -68,12 +68,12 @@ export const Hero: React.FC = () => {
 
           <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold uppercase leading-tight text-white drop-shadow-lg">
             Professional Builders <br />
-            Serving <span className="text-blue-400">Deal, Walmer & Sholden</span>
+            in <span className="text-blue-400">Deal, Kent</span>
           </h1>
 
           <div className="mb-6 sm:mb-8 lg:mb-10 max-w-xl rounded-2xl bg-black/60 p-4 sm:p-6 backdrop-blur-md border border-white/10 shadow-2xl">
             <p className="text-base sm:text-lg lg:text-xl text-white font-light leading-relaxed">
-              M E Stewart Building Contractors deliver expert extensions, renovations and structural works throughout Deal, Walmer, Sholden and surrounding Kent areas. Local builders with proven craftsmanship and reliability.
+              M E Stewart Building Contractors LTD are Deal-based builders serving the entire Deal area including Walmer, Sholden and surrounding residential zones. Expert extensions, renovations and structural works with proven craftsmanship.
             </p>
           </div>
 

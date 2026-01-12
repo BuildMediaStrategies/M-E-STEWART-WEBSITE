@@ -6,135 +6,135 @@ const services = [
   {
     icon: Home,
     title: "General Building",
-    description: "Comprehensive building services for all types of construction projects with expert craftsmanship and attention to detail.",
+    description: "Comprehensive building services for all types of Deal properties with expert craftsmanship and attention to detail.",
     img: "/assets/general-building.jpeg",
-    alt: "Professional construction worker on building site"
+    alt: "Professional construction worker on Deal building site"
   },
   {
     icon: Hammer,
     title: "Fire and Flood Renovation",
-    description: "Specialist restoration services to repair and restore properties damaged by fire or flood, returning them to their former glory.",
+    description: "Specialist restoration services to repair and restore Deal properties damaged by fire or flood, returning them to their former glory.",
     img: "/assets/fire-flood.jpeg",
-    alt: "Fire damaged house requiring restoration"
+    alt: "Fire damaged Deal house requiring restoration"
   },
   {
     icon: Building,
     title: "Loft Conversions",
-    description: "Unlock the potential of your attic. Creating master suites, offices, and additional bedrooms with expert design.",
+    description: "Unlock the potential of your Deal home's attic. Creating master suites, offices, and additional bedrooms with expert design.",
     img: "/assets/loft-conversions.jpeg",
-    alt: "Converted loft space with wooden beams and bedroom"
+    alt: "Converted loft space in Deal property"
   },
   {
     icon: HardHat,
     title: "Project Management",
-    description: "Complete project oversight from planning to completion, ensuring your build stays on time, on budget, and to specification.",
+    description: "Complete project oversight for Deal developments from planning to completion, ensuring builds stay on time and to specification.",
     img: "/assets/project-management.jpeg",
-    alt: "Construction project planning and management"
+    alt: "Deal construction project planning and management"
   },
   {
     icon: Home,
     title: "Sustainable Construction",
-    description: "Eco-friendly building solutions using sustainable materials and energy-efficient designs for a greener future.",
+    description: "Eco-friendly building solutions for Deal properties using sustainable materials and energy-efficient designs.",
     img: "/assets/sustainable-construction.jpeg",
-    alt: "Eco-friendly sustainable building design"
+    alt: "Eco-friendly sustainable building in Deal"
   },
   {
     icon: Building,
     title: "Workshop Design / Construction",
-    description: "Custom-built workshops tailored to your specific needs, from hobbyist spaces to professional working environments.",
+    description: "Custom-built workshops in Deal tailored to your specific needs, from hobbyist spaces to professional working environments.",
     img: "/assets/workshop-design.jpeg",
-    alt: "Custom workshop interior construction"
+    alt: "Custom workshop construction in Deal"
   },
   {
     icon: HardHat,
     title: "Foundations",
-    description: "Expert foundation work ensuring solid, stable bases for all construction projects with proper groundwork and drainage.",
+    description: "Expert foundation work for Deal properties ensuring solid, stable bases with proper groundwork and drainage.",
     img: "/assets/chatgpt_image_dec_9,_2025,_11_04_33_am.png",
-    alt: "Foundation and groundwork construction"
+    alt: "Foundation and groundwork in Deal"
   },
   {
     icon: Shield,
     title: "Insurance Claim Specialist",
-    description: "Experienced in handling insurance-related repairs and renovations, working directly with insurers for seamless claims.",
+    description: "Experienced in handling insurance-related repairs for Deal properties, working directly with insurers for seamless claims.",
     img: "/assets/chatgpt_image_dec_9,_2025,_11_04_09_am.png",
-    alt: "Insurance documentation and property assessment"
+    alt: "Insurance documentation for Deal property"
   },
   {
     icon: Ruler,
     title: "Structural Design",
-    description: "Professional structural engineering and design services to ensure safety, compliance, and optimal building performance.",
+    description: "Professional structural engineering for Deal homes ensuring safety, compliance, and optimal building performance.",
     img: "/assets/chatgpt_image_dec_9,_2025,_10_39_12_am.png",
-    alt: "Architectural blueprints and structural design"
+    alt: "Structural design for Deal properties"
   },
   {
     icon: Clock,
     title: "Emergency Builder Service",
-    description: "24/7 emergency building services for urgent repairs, storm damage, and structural issues requiring immediate attention.",
+    description: "24/7 emergency building services in Deal for urgent repairs, storm damage, and structural issues requiring immediate attention.",
     img: "/assets/chatgpt_image_dec_9,_2025,_10_04_46_am.png",
-    alt: "Emergency building repair service"
+    alt: "Emergency building repair in Deal"
   },
   {
     icon: Hammer,
     title: "Demolition",
-    description: "Safe and efficient demolition services for full or partial building removal, including site clearance and waste disposal.",
+    description: "Safe and efficient demolition services for Deal properties including site clearance and waste disposal.",
     img: "/assets/chatgpt_image_dec_9,_2025,_10_35_43_am.png",
-    alt: "Professional demolition and site clearance"
+    alt: "Professional demolition in Deal"
   },
   {
     icon: Home,
     title: "New Builds",
-    description: "Complete project management from foundation to finish. We build dream homes with uncompromising quality and craftsmanship.",
+    description: "Complete project management from foundation to finish. We build dream homes in Deal with uncompromising quality.",
     img: "/assets/chatgpt_image_dec_9,_2025,_10_33_10_am.png",
-    alt: "Modern new build residential construction"
+    alt: "Modern new build in Deal, Kent"
   },
   {
     icon: Ruler,
     title: "Extensions / Conversions",
-    description: "Expand your living space seamlessly with single-story, double-story, and garage conversions that blend perfectly with existing structures.",
+    description: "Expand your Deal home seamlessly with single-story, double-story, and garage conversions.",
     img: "/assets/chatgpt_image_dec_9,_2025,_10_28_10_am.png",
-    alt: "Home extension and conversion project"
+    alt: "Home extension in Deal"
   },
   {
     icon: PaintBucket,
     title: "Refurbishments",
-    description: "Complete property refurbishment services, modernizing interiors and exteriors while maintaining structural integrity.",
+    description: "Complete property refurbishment services for Deal homes, modernizing interiors and exteriors.",
     img: "/assets/chatgpt_image_dec_9,_2025,_10_25_17_am.png",
-    alt: "Interior property refurbishment and renovation"
+    alt: "Property refurbishment in Deal"
   },
   {
     icon: Hammer,
     title: "Property Maintenance / Repair",
-    description: "Ongoing maintenance and repair services to keep your property in excellent condition year-round.",
+    description: "Ongoing maintenance and repair services to keep your Deal property in excellent condition year-round.",
     img: "/assets/chatgpt_image_dec_9,_2025,_10_23_57_am.png",
-    alt: "Property maintenance and repair work"
+    alt: "Property maintenance in Deal"
   },
   {
     icon: Building,
     title: "Garage Conversions",
-    description: "Transform unused garage space into functional living areas, home offices, gyms, or additional bedrooms.",
+    description: "Transform unused garage space in your Deal home into functional living areas, home offices, or gyms.",
     img: "/assets/chatgpt_image_dec_9,_2025,_10_21_52_am.png",
-    alt: "Garage conversion to living space"
+    alt: "Garage conversion in Deal"
   },
   {
     icon: Award,
     title: "Heritage Property Specialist",
-    description: "Expert conservation and restoration of listed and heritage buildings, respecting historical significance and regulations.",
+    description: "Expert conservation and restoration of listed and heritage buildings in Deal, respecting historical significance.",
     img: "/assets/chatgpt_image_dec_9,_2025,_10_19_04_am.png",
-    alt: "Historic heritage building restoration"
+    alt: "Historic heritage building in Deal"
   },
   {
     icon: HardHat,
     title: "Structural Steels",
-    description: "Installation of structural steel beams and supports for load-bearing alterations, extensions, and new builds.",
+    description: "Installation of structural steel beams for Deal properties including load-bearing alterations and extensions.",
     img: "/assets/chatgpt_image_dec_9,_2025,_10_13_24_am.png",
-    alt: "Structural steel beam installation"
+    alt: "Structural steel installation in Deal"
   },
   {
     icon: Home,
     title: "Garden Studios",
-    description: "Beautiful garden studio constructions for home offices, art studios, gyms, or guest accommodations.",
+    description: "Beautiful garden studio constructions in Deal for home offices, art studios, gyms, or guest accommodations.",
     img: "/assets/chatgpt_image_dec_9,_2025,_10_11_48_am.png",
-    alt: "Modern garden studio office space"
+    alt: "Modern garden studio in Deal"
   }
 ];
 
@@ -167,11 +167,11 @@ export const ServicesPage: React.FC = () => {
       <div className="bg-gradient-to-br from-brand-darkBlue to-brand-blue text-white py-24 px-6 sm:px-12 lg:px-24">
         <div className="mx-auto max-w-7xl text-center">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold uppercase mb-6 animate-fade-in">
-            Building Services in Deal & Dover
+            Building Services in Deal, Kent
           </h1>
           <div className="mx-auto h-1 w-32 bg-white mb-8"></div>
           <p className="text-xl sm:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90">
-            From groundbreaking to final touches, we deliver exceptional construction services across Deal, Dover, and the wider Kent area.
+            From groundbreaking to final touches, we deliver exceptional construction services throughout Deal, Kent including Walmer, Sholden and all surrounding residential zones.
           </p>
         </div>
       </div>

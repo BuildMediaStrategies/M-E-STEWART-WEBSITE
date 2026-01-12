@@ -5,32 +5,32 @@ const services = [
   {
     icon: Home,
     title: "New Builds",
-    description: "Complete project management from foundation to finish. We build dream homes with uncompromising quality."
+    description: "Complete project management from foundation to finish. Building dream homes across Deal with uncompromising quality."
   },
   {
     icon: Hammer,
     title: "Renovations",
-    description: "Breathing new life into existing structures. Modern updates, structural repairs, and complete overhauls."
+    description: "Breathing new life into Deal properties. Modern updates, structural repairs, and complete overhauls."
   },
   {
     icon: Ruler,
     title: "Extensions",
-    description: "Expand your living space seamlessly. Single-story, double-story, and wrap-around extensions."
+    description: "Expand your Deal home seamlessly. Single-story, double-story, and wrap-around extensions."
   },
   {
     icon: HardHat,
     title: "Commercial",
-    description: "Industrial and retail fit-outs. Durable construction designed for business needs and safety standards."
+    description: "Industrial and retail fit-outs in Deal. Durable construction designed for business needs and safety standards."
   },
   {
     icon: Building,
     title: "Loft Conversions",
-    description: "Unlock the potential of your attic. Creating master suites, offices, and additional bedrooms."
+    description: "Unlock the potential of your Deal property's attic. Creating master suites, offices, and additional bedrooms."
   },
   {
     icon: PaintBucket,
     title: "Design & Plan",
-    description: "Collaborative architectural planning and design services to ensure your vision is viable."
+    description: "Collaborative architectural planning and design services for Deal properties to ensure your vision is viable."
   }
 ];
 
@@ -91,7 +91,7 @@ export const Services: React.FC = () => {
             Our <span className="inline-block relative">Expertise<div className="h-1 bg-brand-blue mt-2 absolute left-0 right-0"></div></span>
           </h2>
           <p className="mt-6 sm:mt-8 text-base sm:text-lg text-brand-slate max-w-2xl mx-auto px-4">
-            We specialize in a wide range of construction services, delivering superior results on time and within budget.
+            We specialize in a wide range of construction services for Deal homes and businesses, delivering superior results on time and within budget.
           </p>
         </div>
 

@@ -38,11 +38,11 @@ export const ContactPage: React.FC = () => {
       <div className="bg-gradient-to-br from-brand-darkBlue to-brand-blue text-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-24">
         <div className="mx-auto max-w-7xl text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold uppercase mb-4 sm:mb-6 animate-fade-in">
-            Get in Touch with Our Deal Team
+            Contact Deal's Leading Builders
           </h1>
           <div className="mx-auto h-1 w-24 sm:w-32 bg-white mb-4 sm:mb-6"></div>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90 px-4">
-            Serving Deal, Dover, and Kent. Get in touch for a free consultation and quote.
+            Based in Deal, Kent, serving the full Deal area. Get in touch for a free consultation and quote.
           </p>
         </div>
       </div>

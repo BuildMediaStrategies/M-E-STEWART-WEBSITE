@@ -6,53 +6,53 @@ const infoCards = [
     icon: Building,
     title: "Company Overview",
     content: [
-      "We have 28 years of experience in the building trade.",
-      "We deliver residential and commercial building work across the south-east corner of Kent."
+      "Founded and operating in Deal, Kent with 28 years of experience in the building trade.",
+      "We deliver residential and commercial building work throughout the Deal area including Walmer, Sholden and surrounding zones."
     ]
   },
   {
     icon: Users,
-    title: "Team and Trades",
+    title: "Local Deal Expertise",
     content: [
-      "We work with a team of trusted tradesmen.",
-      "We cover all trades depending on the project requirements."
+      "We work with a team of trusted tradesmen who understand Deal's unique housing stock.",
+      "Long-term commitment to Deal homeowners with extensive knowledge of local properties."
     ]
   },
   {
     icon: Briefcase,
     title: "Experience and Ongoing Work",
     content: [
-      "We carry out maintenance and building work for estate agents including Martins & Co and Jenkinson's Estate Agents and Lettings."
+      "We carry out maintenance and building work for estate agents in Deal including Martins & Co and Jenkinson's Estate Agents and Lettings."
     ]
   },
   {
     icon: Target,
     title: "Working Approach",
     content: [
-      "We manage projects from start to finish.",
-      "We coordinate all trades internally.",
-      "We maintain clear communication throughout the build."
+      "We manage projects from start to finish across all Deal properties.",
+      "We coordinate all trades internally for seamless delivery.",
+      "We maintain clear communication throughout every Deal building project."
     ]
   }
 ];
 
 const areas = [
   "Deal",
-  "Canterbury",
-  "St Margaret's",
-  "Dover",
-  "Margate",
-  "Ramsgate",
-  "Folkestone",
-  "Sandgate"
+  "Walmer (within Deal)",
+  "Sholden (within Deal)",
+  "Upper Deal",
+  "Mill Hill (Deal)",
+  "North Deal",
+  "Deal Town Centre",
+  "Betteshanger (Deal)"
 ];
 
 const workTypes = [
-  "Extensions and conversions",
-  "Kitchen and bathroom refurbishments",
-  "General building works",
-  "Residential and commercial projects",
-  "Architectural design services where required"
+  "Extensions and conversions for Deal properties",
+  "Kitchen and bathroom refurbishments in Deal homes",
+  "General building works across the Deal area",
+  "Residential and commercial projects throughout Deal",
+  "Architectural design services for Deal developments"
 ];
 
 export const AboutPage: React.FC = () => {
@@ -61,11 +61,11 @@ export const AboutPage: React.FC = () => {
       <div className="bg-gradient-to-br from-brand-darkBlue to-brand-blue text-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-24">
         <div className="mx-auto max-w-7xl text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold uppercase mb-4 sm:mb-6 animate-fade-in">
-            About M E Stewart
+            About M E Stewart Deal, Kent
           </h1>
           <div className="mx-auto h-1 w-24 sm:w-32 bg-white mb-4 sm:mb-6"></div>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90 px-4">
-            Building Contractors Based in Deal, Serving Dover & Kent
+            Deal-Based Building Contractors Serving the Entire Deal Area
           </p>
         </div>
       </div>
@@ -108,7 +108,7 @@ export const AboutPage: React.FC = () => {
             </h2>
             <div className="mx-auto h-1 w-24 bg-brand-blue mb-4 sm:mb-6"></div>
             <p className="text-base sm:text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto px-4">
-              We operate across the following areas and the wider south-east Kent region:
+              We operate across Deal, Kent and all surrounding residential zones within the Deal area:
             </p>
           </div>
           <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4 lg:gap-6">

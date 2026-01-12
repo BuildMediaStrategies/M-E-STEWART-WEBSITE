@@ -4,46 +4,46 @@ import { Link } from 'react-router-dom';
 
 const primaryAreas = [
   {
-    name: "Deal",
-    description: "Historic seaside town with period properties and modern developments. Expert local builders serving Deal town centre, Upper Deal and surrounding areas.",
+    name: "Deal Town Centre",
+    description: "Historic seaside town with period properties and modern developments. Expert local builders serving Deal town centre with proven craftsmanship.",
     link: "/builders-deal"
   },
   {
-    name: "Walmer",
-    description: "Coastal village with Victorian and Edwardian architecture. Professional building services near Walmer Castle and throughout the CT14 area.",
+    name: "Walmer (within Deal)",
+    description: "Residential area within Deal featuring Victorian and Edwardian architecture. Professional building services near Walmer Castle.",
     link: "/builders-walmer"
   },
   {
-    name: "Sholden",
-    description: "Quiet village setting with diverse housing stock. Experienced builders for extensions, renovations and structural works.",
+    name: "Sholden (within Deal)",
+    description: "Residential zone within the Deal area with diverse housing stock. Experienced builders for extensions and renovations.",
     link: "/builders-sholden"
   }
 ];
 
 const additionalAreas = [
   {
-    name: "Dover",
-    description: "Major port town featuring commercial and residential projects"
+    name: "Upper Deal",
+    description: "Elevated residential area within Deal featuring family homes"
   },
   {
-    name: "Sandwich",
-    description: "Medieval town with conservation areas and listed buildings"
+    name: "Mill Hill (Deal)",
+    description: "Residential zone within Deal with diverse property types"
   },
   {
-    name: "Kingsdown",
-    description: "Coastal village with stunning sea views and period properties"
+    name: "North Deal",
+    description: "Northern residential area of Deal with modern developments"
   },
   {
-    name: "St Margareats",
-    description: "Traditional village with family homes and local character"
+    name: "Betteshanger (Deal)",
+    description: "Area within the Deal region with traditional and new builds"
   },
   {
-    name: "Worth",
-    description: "Rural village setting with modern and traditional builds"
+    name: "Deal Marina Area",
+    description: "Waterfront properties and developments within Deal"
   },
   {
-    name: "Great Mongeham",
-    description: "Village location with excellent transport links"
+    name: "Deal Conservation Areas",
+    description: "Historic properties within Deal requiring specialist care"
   }
 ];
 
@@ -53,11 +53,11 @@ export const AreasPage: React.FC = () => {
       <div className="bg-gradient-to-br from-brand-darkBlue to-brand-blue text-white py-20 px-6 sm:px-12 lg:px-24">
         <div className="mx-auto max-w-7xl text-center">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold uppercase mb-6 animate-fade-in">
-            Areas We Cover
+            Builders in Deal, Kent
           </h1>
           <div className="mx-auto h-1 w-32 bg-white mb-6"></div>
           <p className="text-xl sm:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90">
-            Reliable building and refurbishment services across East Kent
+            Professional building and refurbishment services throughout the Deal area
           </p>
         </div>
       </div>
@@ -65,7 +65,7 @@ export const AreasPage: React.FC = () => {
       <section className="py-20 px-6 sm:px-12 lg:px-24 bg-white">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-4xl font-bold uppercase text-brand-darkBlue mb-4 text-center">
-            Primary Service Areas
+            Deal Area Coverage
           </h2>
           <div className="mx-auto h-1 w-24 bg-brand-blue mb-12"></div>
 
@@ -96,7 +96,7 @@ export const AreasPage: React.FC = () => {
           </div>
 
           <h2 className="text-3xl font-bold uppercase text-brand-darkBlue mb-4 text-center mt-12">
-            Additional Coverage Areas
+            Additional Deal Zones
           </h2>
           <div className="mx-auto h-1 w-20 bg-brand-blue mb-12"></div>
 
@@ -127,11 +127,11 @@ export const AreasPage: React.FC = () => {
       <section className="py-20 px-6 sm:px-12 lg:px-24 bg-slate-50">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="mb-4 text-4xl font-bold uppercase text-brand-darkBlue sm:text-5xl">
-            Full Building Services Across East Kent
+            Full Building Services Throughout Deal, Kent
           </h2>
           <div className="mx-auto h-1 w-24 bg-brand-blue mb-6"></div>
           <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-            M E Stewart Building Contractors provides comprehensive construction and refurbishment services to homeowners throughout East Kent. Whether you're planning a home extension, renovation, new build, or commercial project, our experienced team delivers quality workmanship with local expertise.
+            M E Stewart Building Contractors LTD provides comprehensive construction and refurbishment services to homeowners throughout the Deal area. Whether you're planning a home extension, renovation, new build, or commercial project in Deal, our experienced team delivers quality workmanship with extensive local knowledge of Deal properties.
           </p>
         </div>
       </section>
@@ -142,7 +142,7 @@ export const AreasPage: React.FC = () => {
             Ready to Discuss Your Project?
           </h2>
           <p className="mb-8 text-xl leading-relaxed opacity-90">
-            Contact us today for a free consultation. We serve all areas across East Kent with the same commitment to excellence.
+            Contact us today for a free consultation. We serve all zones across the Deal area with the same commitment to excellence.
           </p>
           <Link
             to="/contact"
