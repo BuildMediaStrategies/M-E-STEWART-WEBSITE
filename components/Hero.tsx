@@ -55,7 +55,7 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex h-full flex-col justify-center px-4 pt-24 sm:px-8 sm:pt-0 lg:px-24">
+      <div className="relative z-10 flex h-full flex-col justify-center px-4 pt-32 sm:px-8 sm:pt-24 lg:px-24">
         <div className="max-w-4xl">
           <div className="mb-4 sm:mb-6 flex flex-wrap items-center gap-2 sm:gap-4">
             <span className="text-xs sm:text-sm font-bold uppercase tracking-wide sm:tracking-widest text-brand-blue bg-white rounded-full px-3 py-1 sm:px-4 w-fit shadow-md">

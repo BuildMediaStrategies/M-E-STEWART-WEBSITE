@@ -256,7 +256,7 @@ export const BuildersDealPage: React.FC = () => {
 
           {/* Google Maps Embed */}
           <section className="mb-12">
-            <h2 className="text-3xl font-bold text-brand-darkBlue mb-6">Find Us in Deal</h2>
+            <h2 className="text-3xl font-bold text-brand-darkBlue mb-6">Find Us in Deal, Kent</h2>
             <div className="bg-white rounded-lg shadow-lg p-4 overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.4152557978687!2d1.3419416766034906!3d51.22984677175148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2cd48fe12408e14d%3A0x21e605a6c573c3e9!2sM%20E%20Stewart%20Building%20Contractors%20LTD%20Deal%20Kent!5e0!3m2!1sen!2suk!4v1768213605022!5m2!1sen!2suk"
@@ -267,6 +267,7 @@ export const BuildersDealPage: React.FC = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-lg"
+                title="M E Stewart Building Contractors Location in Deal, Kent"
               ></iframe>
             </div>
           </section>
