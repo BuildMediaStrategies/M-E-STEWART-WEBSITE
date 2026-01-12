@@ -4,11 +4,11 @@ import { CheckCircle, Home, Wrench, MapPin, Phone, Mail } from 'lucide-react';
 
 export const BuildersDealPage: React.FC = () => {
   useEffect(() => {
-    document.title = 'Best Builders in Deal, Kent Near Me | M E Stewart Building Contractors';
+    document.title = 'Best Builders in Deal, Kent Near Me | Home Extensions & Renovations';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Trusted local builders in Deal, Kent. Professional extensions, renovations & structural works. Based near Deal town centre. Free quotes. Call 07885 930284');
+      metaDescription.setAttribute('content', 'M E Stewart Building Contractors LTD - Professional builders in Deal, Kent. Expert home extensions, renovations & structural works serving all areas of Deal. Free quotes. Call 07885 930284');
     }
 
     const schema = {
@@ -17,7 +17,7 @@ export const BuildersDealPage: React.FC = () => {
       "@id": "https://mestewartbuildingcontractorsltd.uk/#organization",
       "name": "M E Stewart Building Contractors LTD",
       "image": "https://mestewartbuildingcontractorsltd.uk/assets/logo.png",
-      "description": "Professional builders in Deal, Kent providing home extensions, renovations, structural works and general building services",
+      "description": "Professional builders in Deal, Kent providing home extensions, renovations, structural works and general building services across all areas of Deal",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Deal",
@@ -31,7 +31,7 @@ export const BuildersDealPage: React.FC = () => {
         "longitude": "1.4017"
       },
       "telephone": "07885930284",
-      "email": "markstewart21@sky.com",
+      "email": "enquiries@mestewartbuildingcontractorsltd.uk",
       "url": "https://mestewartbuildingcontractorsltd.uk",
       "priceRange": "££",
       "areaServed": [
@@ -39,14 +39,15 @@ export const BuildersDealPage: React.FC = () => {
           "@type": "City",
           "name": "Deal"
         },
-        {
-          "@type": "City",
-          "name": "Walmer"
-        },
-        {
-          "@type": "City",
-          "name": "Sholden"
-        }
+        "Walmer",
+        "Sholden",
+        "Ringwould",
+        "Mongeham",
+        "Great Mongeham",
+        "Upper Deal",
+        "Lower Deal",
+        "Ripple",
+        "Kingsdown"
       ],
       "sameAs": []
     };
@@ -78,10 +79,10 @@ export const BuildersDealPage: React.FC = () => {
           {/* Opening Statement */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8 border-l-4 border-brand-blue">
             <p className="text-lg md:text-xl leading-relaxed text-gray-800 mb-4">
-              <strong className="text-brand-darkBlue">M E Stewart Building Contractors</strong> are trusted local builders in Deal, Kent, providing professional home extensions, renovations and structural works across Deal, Walmer and Sholden. Based near Deal town centre, we support homeowners with reliable, high quality building services delivered by experienced local tradesmen.
+              <strong className="text-brand-darkBlue">M E Stewart Building Contractors LTD</strong> are trusted local builders in Deal, Kent, providing professional home extensions, renovations and structural works across all areas of Deal including Walmer, Sholden, Upper Deal, and surrounding villages. Based in Deal, we support homeowners with reliable, high quality building services delivered by experienced local tradesmen.
             </p>
             <p className="text-sm text-gray-600 italic">
-              <strong>Latest update:</strong> Now actively delivering building projects across Deal, Walmer and Sholden in 2026.
+              <strong>Latest update:</strong> Now actively delivering building projects across Deal and all surrounding areas in 2026.
             </p>
           </div>
 
@@ -93,7 +94,7 @@ export const BuildersDealPage: React.FC = () => {
             </h2>
             <div className="bg-white rounded-lg shadow-md p-8">
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                Operating from Deal town centre, we serve homes throughout the CT14 postcode including properties near Deal Castle, along the seafront towards Deal Pier, and through the residential streets around Victoria Park and Mill Hill. Whether you're refurbishing a period terrace near Queen Street or extending a modern detached home in Upper Deal, we bring decades of building expertise to every project.
+                Operating from Deal, we serve homes throughout the entire Deal area including properties near Deal Castle, along the seafront towards Deal Pier, and through the residential streets around Victoria Park and Mill Hill. Whether you're refurbishing a period terrace near Queen Street or extending a modern detached home in Upper Deal, we bring decades of building expertise to every project.
               </p>
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
                 Deal's unique mix of Georgian and Victorian architecture requires specialist knowledge. Our team understands the structural considerations of older properties, from lime mortar repairs to listed building sensitivities, while also delivering contemporary extensions that complement Deal's coastal character.
@@ -115,6 +116,90 @@ export const BuildersDealPage: React.FC = () => {
                   <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                   <p className="text-gray-700">Period property restoration</p>
                 </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Areas of Deal We Serve */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-brand-darkBlue mb-6 flex items-center gap-3">
+              <MapPin className="w-8 h-8 text-brand-blue" />
+              Areas of Deal We Serve
+            </h2>
+            <div className="bg-gradient-to-br from-brand-blue/5 to-brand-darkBlue/5 rounded-lg p-8 border border-brand-blue/20">
+              <p className="text-lg leading-relaxed text-gray-700 mb-6">
+                As Deal-based builders, we provide comprehensive building services throughout all areas of Deal, Kent. Our local presence ensures rapid response times, site familiarity, and genuine understanding of Deal's building landscape.
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <h3 className="text-xl font-bold text-brand-darkBlue mb-4">
+                    <Link to="/builders-walmer" className="hover:text-brand-blue transition-colors">Walmer</Link>
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed mb-3">
+                    Walmer is a coastal area within Deal, known for historic properties near Walmer Castle, Victorian seafront homes along The Strand, and family residences throughout Hawkshill and Canada Road. We deliver extensions, loft conversions, and complete renovations respecting Walmer's architectural heritage while meeting modern living requirements.
+                  </p>
+                  <Link to="/builders-walmer" className="text-brand-blue font-semibold hover:underline">
+                    View Walmer Building Services →
+                  </Link>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-bold text-brand-darkBlue mb-4">
+                    <Link to="/builders-sholden" className="hover:text-brand-blue transition-colors">Sholden</Link>
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed mb-3">
+                    Sholden is a village area within Deal, featuring diverse housing from bungalows to modern detached properties. Located along Sandwich Road northeast of Deal town centre, Sholden properties benefit from generous plot sizes ideal for extensions and garden buildings. We specialize in bungalow conversions, rear extensions, and whole-house modernizations.
+                  </p>
+                  <Link to="/builders-sholden" className="text-brand-blue font-semibold hover:underline">
+                    View Sholden Building Services →
+                  </Link>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg p-6">
+                <h3 className="text-xl font-bold text-brand-darkBlue mb-4">Additional Deal Areas We Cover</h3>
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 text-gray-700">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-brand-blue flex-shrink-0" />
+                    <span>Ringwould</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-brand-blue flex-shrink-0" />
+                    <span>Mongeham</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-brand-blue flex-shrink-0" />
+                    <span>Great Mongeham</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-brand-blue flex-shrink-0" />
+                    <span>Upper Deal</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-brand-blue flex-shrink-0" />
+                    <span>Lower Deal</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-brand-blue flex-shrink-0" />
+                    <span>Ripple</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-brand-blue flex-shrink-0" />
+                    <span>Kingsdown (Deal side)</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-brand-blue flex-shrink-0" />
+                    <span>Sandwich Bay edge</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-brand-blue flex-shrink-0" />
+                    <span>St Margarets at Cliffe</span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mt-4 text-sm italic">
+                  All these areas form part of the greater Deal, Kent area and are served with the same commitment to quality and local expertise.
+                </p>
               </div>
             </div>
           </section>
@@ -169,45 +254,20 @@ export const BuildersDealPage: React.FC = () => {
             </div>
           </section>
 
-          {/* Nearby Areas */}
+          {/* Google Maps Embed */}
           <section className="mb-12">
-            <h2 className="text-3xl font-bold text-brand-darkBlue mb-6 flex items-center gap-3">
-              <MapPin className="w-8 h-8 text-brand-blue" />
-              Trusted Builders Serving Nearby Areas
-            </h2>
-            <div className="bg-gradient-to-br from-brand-blue/5 to-brand-darkBlue/5 rounded-lg p-8 border border-brand-blue/20">
-              <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                Based in Deal, we're perfectly positioned to serve surrounding areas within a 10-mile radius. Our local knowledge extends throughout East Kent, ensuring rapid response times and genuine familiarity with regional building characteristics.
-              </p>
-              <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                We also provide building services in <Link to="/builders-walmer" className="text-brand-blue font-semibold hover:underline">Walmer</Link> and <Link to="/builders-sholden" className="text-brand-blue font-semibold hover:underline">Sholden</Link>, bringing the same commitment to quality and local expertise throughout the Deal area.
-              </p>
-              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 text-gray-700">
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-brand-blue" />
-                  <span>Walmer (1.5 miles)</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-brand-blue" />
-                  <span>Sholden (2 miles)</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-brand-blue" />
-                  <span>Kingsdown (3 miles)</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-brand-blue" />
-                  <span>St Margarets (4 miles)</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-brand-blue" />
-                  <span>Dover (8 miles)</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-brand-blue" />
-                  <span>Sandwich (6 miles)</span>
-                </div>
-              </div>
+            <h2 className="text-3xl font-bold text-brand-darkBlue mb-6">Find Us in Deal</h2>
+            <div className="bg-white rounded-lg shadow-lg p-4 overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.4152557978687!2d1.3419416766034906!3d51.22984677175148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2cd48fe12408e14d%3A0x21e605a6c573c3e9!2sM%20E%20Stewart%20Building%20Contractors%20LTD%20Deal%20Kent!5e0!3m2!1sen!2suk!4v1768213605022!5m2!1sen!2suk"
+                width="100%"
+                height="450"
+                style={{border:0}}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-lg"
+              ></iframe>
             </div>
           </section>
 
@@ -215,7 +275,7 @@ export const BuildersDealPage: React.FC = () => {
           <section className="bg-brand-darkBlue text-white rounded-lg shadow-xl p-8 md:p-12">
             <h2 className="text-3xl font-bold mb-6">Get Your Free Building Quote in Deal</h2>
             <p className="text-lg mb-8 leading-relaxed">
-              Ready to start your building project? Contact M E Stewart Building Contractors today for a free, no-obligation quote. We serve homeowners throughout Deal, Walmer, Sholden and the surrounding Kent area.
+              Ready to start your building project? Contact M E Stewart Building Contractors LTD today for a free, no-obligation quote. We serve homeowners throughout Deal, Kent and all surrounding areas.
             </p>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="flex items-center gap-3">
@@ -229,7 +289,7 @@ export const BuildersDealPage: React.FC = () => {
                 <Mail className="w-6 h-6 text-brand-blue" />
                 <div>
                   <p className="text-sm text-gray-300">Email</p>
-                  <a href="mailto:markstewart21@sky.com" className="text-xl font-bold hover:text-brand-blue transition-colors break-all">markstewart21@sky.com</a>
+                  <a href="mailto:enquiries@mestewartbuildingcontractorsltd.uk" className="text-xl font-bold hover:text-brand-blue transition-colors break-all">enquiries@mestewartbuildingcontractorsltd.uk</a>
                 </div>
               </div>
             </div>

@@ -30,7 +30,7 @@ export const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold uppercase text-base sm:text-lg">Call Us</h4>
-                  <a href="tel:07738520388" className="text-sm sm:text-base text-blue-200 hover:text-white transition-colors">07738 520388</a>
+                  <a href="tel:07885930284" className="text-sm sm:text-base text-blue-200 hover:text-white transition-colors">07885 930284</a>
                   <p className="text-xs text-blue-300">Mon-Fri, 8am - 6pm</p>
                 </div>
               </div>
@@ -41,7 +41,7 @@ export const Contact: React.FC = () => {
                 </div>
                 <div className="min-w-0">
                   <h4 className="font-bold uppercase text-base sm:text-lg">Email Us</h4>
-                  <a href="mailto:markstewart21@sky.com" className="text-sm sm:text-base text-blue-200 hover:text-white transition-colors break-all">markstewart21@sky.com</a>
+                  <a href="mailto:enquiries@mestewartbuildingcontractorsltd.uk" className="text-sm sm:text-base text-blue-200 hover:text-white transition-colors break-all">enquiries@mestewartbuildingcontractorsltd.uk</a>
                 </div>
               </div>
 

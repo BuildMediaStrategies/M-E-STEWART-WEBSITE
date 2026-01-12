@@ -191,8 +191,8 @@ export const ContactPage: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-bold uppercase text-xs sm:text-sm mb-1">Phone</p>
-                      <a href="tel:07738520388" className="text-sm sm:text-base lg:hover:text-brand-blue transition-colors">
-                        07738 520388
+                      <a href="tel:07885930284" className="text-sm sm:text-base lg:hover:text-brand-blue transition-colors">
+                        07885 930284
                       </a>
                     </div>
                   </div>
@@ -203,8 +203,8 @@ export const ContactPage: React.FC = () => {
                     </div>
                     <div className="min-w-0">
                       <p className="font-bold uppercase text-xs sm:text-sm mb-1">Email</p>
-                      <a href="mailto:markstewart21@sky.com" className="text-sm sm:text-base lg:hover:text-brand-blue transition-colors break-all">
-                        markstewart21@sky.com
+                      <a href="mailto:enquiries@mestewartbuildingcontractorsltd.uk" className="text-sm sm:text-base lg:hover:text-brand-blue transition-colors break-all">
+                        enquiries@mestewartbuildingcontractorsltd.uk
                       </a>
                     </div>
                   </div>
@@ -263,7 +263,7 @@ export const ContactPage: React.FC = () => {
         <div className="mx-auto max-w-7xl">
           <div className="bg-white p-2 sm:p-4 rounded-xl sm:rounded-2xl shadow-lg overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40233.81487974587!2d1.3795!3d51.2228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d9290f3d4b6d7b%3A0x4e6e6e6e6e6e6e6e!2sDeal%2C%20UK!5e0!3m2!1sen!2suk!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.4152557978687!2d1.3419416766034906!3d51.22984677175148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2cd48fe12408e14d%3A0x21e605a6c573c3e9!2sM%20E%20Stewart%20Building%20Contractors%20LTD%20Deal%20Kent!5e0!3m2!1sen!2suk!4v1768213605022!5m2!1sen!2suk"
               width="100%"
               height="300"
               style={{ border: 0 }}
