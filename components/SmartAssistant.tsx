@@ -8,8 +8,7 @@ export const SmartAssistant: React.FC = () => {
   const [response, setResponse] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const handleAsk = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleAsk = async () => {
     if (!query.trim()) return;
 
     setLoading(true);
@@ -49,22 +48,23 @@ export const SmartAssistant: React.FC = () => {
           {!response ? (
             <div className="h-full flex flex-col justify-center">
               <h4 className="mb-6 text-2xl font-bold text-brand-slate uppercase">Describe your project</h4>
-              <form onSubmit={handleAsk} className="relative">
+              <div className="relative">
                 <textarea
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
-                  placeholder="e.g., I want to add a 20sqm deck to the back of my house, or Convert my garage into an office..."
+                  placeholder="e.g., I want to add a 20sqm deck to the back of my house, or convert my garage into an office..."
                   className="w-full h-40 rounded-2xl border-2 border-white p-4 text-lg focus:border-brand-blue focus:outline-none resize-none bg-white shadow-sm"
                 />
                 <button
-                  type="submit"
+                  type="button"
+                  onClick={handleAsk}
                   disabled={loading || !query.trim()}
                   className="mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-brand-blue py-3 font-bold uppercase text-white transition-colors lg:hover:bg-brand-darkBlue disabled:opacity-50 shadow-md"
                 >
                   {loading ? <Loader2 className="animate-spin" /> : <Send size={20} />}
                   {loading ? "Analyzing Project..." : "Get Insight"}
                 </button>
-              </form>
+              </div>
             </div>
           ) : (
             <div className="h-full flex flex-col">

@@ -6,42 +6,42 @@ const services = [
   {
     icon: Home,
     title: "General Building",
-    description: "Comprehensive building services for all types of Deal properties with expert craftsmanship and attention to detail.",
+    description: "Comprehensive building services for all types of Deal properties, delivered with careful workmanship and attention to detail.",
     img: "/assets/general-building.jpeg",
     alt: "Professional construction worker on Deal building site"
   },
   {
     icon: Hammer,
     title: "Fire and Flood Renovation",
-    description: "Specialist restoration services to repair and restore Deal properties damaged by fire or flood, returning them to their former glory.",
+    description: "Specialist restoration to repair Deal properties damaged by fire or flood, making them safe, dry and ready to live in again.",
     img: "/assets/fire-flood.jpeg",
     alt: "Fire damaged Deal house requiring restoration"
   },
   {
     icon: Building,
     title: "Loft Conversions",
-    description: "Unlock the potential of your Deal home's attic. Creating master suites, offices, and additional bedrooms with expert design.",
+    description: "Unlock the potential of your Deal home&apos;s attic to create master suites, home offices or extra bedrooms.",
     img: "/assets/loft-conversions.jpeg",
     alt: "Converted loft space in Deal property"
   },
   {
     icon: HardHat,
     title: "Project Management",
-    description: "Complete project oversight for Deal developments from planning to completion, ensuring builds stay on time and to specification.",
+    description: "Complete project oversight from planning to completion so your build in Deal or East Kent stays on time and to specification.",
     img: "/assets/project-management.jpeg",
     alt: "Deal construction project planning and management"
   },
   {
     icon: Home,
     title: "Sustainable Construction",
-    description: "Eco-friendly building solutions for Deal properties using sustainable materials and energy-efficient designs.",
+    description: "Eco‑conscious building solutions using sustainable materials and energy‑efficient designs for Deal and East Kent properties.",
     img: "/assets/sustainable-construction.jpeg",
     alt: "Eco-friendly sustainable building in Deal"
   },
   {
     icon: Building,
     title: "Workshop Design / Construction",
-    description: "Custom-built workshops in Deal tailored to your specific needs, from hobbyist spaces to professional working environments.",
+    description: "Custom-built workshops in Deal tailored to your needs, from hobby spaces to professional working environments.",
     img: "/assets/workshop-design.jpeg",
     alt: "Custom workshop construction in Deal"
   },

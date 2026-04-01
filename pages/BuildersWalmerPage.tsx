@@ -4,7 +4,7 @@ import { CheckCircle, Home, Wrench, ArrowLeft } from 'lucide-react';
 
 export const BuildersWalmerPage: React.FC = () => {
   useEffect(() => {
-    document.title = 'Best Builders in Walmer, Deal, Kent | M E Stewart Building Contractors';
+    document.title = 'Best Builders in Walmer, Deal, Kent | M E Stewart Building Contractors Ltd';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -15,9 +15,9 @@ export const BuildersWalmerPage: React.FC = () => {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "@id": "https://mestewartbuildingcontractorsltd.uk/#organization",
-      "name": "M E Stewart Building Contractors LTD",
+      "name": "M E Stewart Building Contractors Ltd",
       "image": "https://mestewartbuildingcontractorsltd.uk/assets/logo.png",
-      "description": "Experienced builders serving Walmer area of Deal, Kent specializing in extensions, renovations and structural building works",
+      "description": "Experienced builders serving Walmer area of Deal, Kent specialising in extensions, renovations and structural building works",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Deal",
@@ -73,7 +73,7 @@ export const BuildersWalmerPage: React.FC = () => {
           {/* Opening Statement */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8 border-l-4 border-brand-blue">
             <p className="text-lg md:text-xl leading-relaxed text-gray-800 mb-4">
-              Walmer is a coastal area within Deal, Kent, served by our Deal-based building team. <strong className="text-brand-darkBlue">M E Stewart Building Contractors LTD</strong> deliver quality home extensions, loft conversions and complete renovations throughout Walmer from our base in Deal, providing local expertise and dependable craftsmanship across the CT14 area.
+              Walmer is a coastal area within Deal, Kent, served by our Deal-based building team. <strong className="text-brand-darkBlue">M E Stewart Building Contractors Ltd</strong> deliver quality home extensions, loft conversions and complete renovations throughout Walmer from our base in Deal, providing local expertise and dependable craftsmanship across the CT14 area.
             </p>
             <p className="text-sm text-gray-600 italic">
               <strong>Latest update:</strong> Now actively delivering building projects across Deal and all surrounding areas in 2026.
@@ -158,7 +158,7 @@ export const BuildersWalmerPage: React.FC = () => {
             <div className="bg-gradient-to-br from-brand-blue/10 to-brand-darkBlue/10 rounded-lg p-8 border-2 border-brand-blue">
               <h2 className="text-2xl font-bold text-brand-darkBlue mb-4">Serving All Areas of Deal, Kent</h2>
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                Walmer is part of the greater Deal area. M E Stewart Building Contractors LTD are based in Deal and serve all surrounding areas including Walmer, Sholden, Upper Deal, Lower Deal, Ringwould, Mongeham and more.
+                Walmer is part of the greater Deal area. M E Stewart Building Contractors Ltd are based in Deal and serve all surrounding areas including Walmer, Sholden, Upper Deal, Lower Deal, Ringwould, Mongeham and more.
               </p>
               <Link
                 to="/builders-deal"

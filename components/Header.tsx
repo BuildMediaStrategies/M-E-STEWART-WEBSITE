@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import logo from '../assets/chatgpt_image_dec_8,_2025,_06_20_23_pm.png';
 
 export const Header: React.FC = () => {
@@ -11,6 +11,7 @@ export const Header: React.FC = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
+    { name: 'Extensions', href: '/house-extensions' },
     { name: 'Areas', href: '/areas' },
     { name: 'Projects', href: '/projects' },
     { name: 'Contact', href: '/contact' },
@@ -64,11 +65,31 @@ export const Header: React.FC = () => {
           boxShadow: '0 4px 20px rgba(0, 149, 255, 0.6), 0 2px 8px rgba(0, 149, 255, 0.8)'
         }}
       >
-        <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16 py-1">
+        {/* Slim top contact bar for local trust/intent */}
+        <div className="bg-brand-darkBlue text-white text-[11px] sm:text-xs md:text-sm">
+          <div className="flex flex-col sm:flex-row items-center sm:items-center justify-center sm:justify-between gap-1 sm:gap-3 px-3 sm:px-4 md:px-8 lg:px-16 py-0.5">
+            <span className="font-semibold tracking-wide uppercase text-center sm:text-left">
+              M E Stewart Building Contractors Ltd
+            </span>
+            <a
+              href="tel:07885930284"
+              className="flex items-center gap-1.5 sm:gap-2 font-semibold whitespace-nowrap lg:hover:text-brand-grey transition-colors"
+              aria-label="Call M E Stewart Building Contractors Ltd on 07885 930284"
+            >
+              <Phone className="w-3.5 h-3.5 md:w-4 md:h-4" aria-hidden="true" />
+              <span>07885 930284</span>
+            </a>
+            <span className="text-[10px] sm:text-xs text-brand-grey text-center sm:text-right">
+              Serving Deal, Dover, Thanet &amp; Canterbury
+            </span>
+          </div>
+        </div>
+
+        <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16 py-0.5">
           <Link to="/" className="flex items-center flex-shrink-0 -ml-1 sm:-ml-2 md:-ml-4 -my-2 sm:-my-3 md:-my-4">
             <img
               src={logo}
-              alt="M E Stewart Contractors"
+              alt="M E Stewart Building Contractors Ltd"
               className="h-28 sm:h-32 md:h-40 lg:h-48 w-auto object-contain leading-none"
             />
           </Link>

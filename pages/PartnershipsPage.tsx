@@ -11,7 +11,7 @@ const services = [
   {
     icon: Clock,
     title: "Quick-Turn Refurbishments",
-    description: "Rapid turnaround between tenancies. Complete property refreshes delivered on time to minimize void periods and maximize rental income."
+    description: "Rapid turnaround between tenancies. Complete property refreshes delivered on time to minimise void periods and maximise rental income."
   },
   {
     icon: Home,
@@ -133,14 +133,14 @@ export const PartnershipsPage: React.FC = () => {
                 <div className="partnership-image-container">
                   <img
                     src="/assets/mark_stewart_conversion_stairs_before.webp"
-                    alt="Staircase - Before"
+                    alt="Staircase conversion before refurbishment at an East Kent property"
                     className="partnership-image"
                   />
                 </div>
                 <div className="partnership-image-container">
                   <img
                     src="/assets/mark_stewart_conversion_stairs_after.webp"
-                    alt="Staircase - After"
+                    alt="Completed staircase conversion with modern balustrade in an East Kent home"
                     className="partnership-image"
                   />
                 </div>
@@ -162,7 +162,7 @@ export const PartnershipsPage: React.FC = () => {
                   Property Refurbishment
                 </h2>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  Full property transformation from outdated to move-in ready. Fast turnaround times to minimize void periods and maximize rental returns.
+                  Full property transformation from outdated to move-in ready. Fast turnaround times to minimise void periods and maximise rental returns.
                 </p>
               </div>
             </div>
@@ -172,14 +172,14 @@ export const PartnershipsPage: React.FC = () => {
                 <div className="partnership-image-container">
                   <img
                     src="/assets/mark_stewart_house_refurb_image_before.jpeg"
-                    alt="Property - Before"
+                    alt="House refurbishment before works at a property near Deal, Kent"
                     className="partnership-image"
                   />
                 </div>
                 <div className="partnership-image-container">
                   <img
                     src="/assets/mark_stewart_house_refurb_after.jpeg"
-                    alt="Property - After"
+                    alt="Completed house refurbishment project carried out by local builders in Deal, Kent"
                     className="partnership-image"
                   />
                 </div>

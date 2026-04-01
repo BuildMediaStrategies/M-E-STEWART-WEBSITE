@@ -6,25 +6,25 @@ const projects = [
     title: "Living Room Renovation",
     category: "Deal, Kent",
     img: "/assets/before-after-living-room-refurb2.jpg",
-    alt: "Modern living room renovation completed in Deal home"
+    alt: "Modern living room renovation completed in a family home in Deal, Kent"
   },
   {
     title: "Staircase Renovation",
     category: "Deal, Kent",
     img: "/assets/mark_stewart_conversion_stairs_after.webp",
-    alt: "Staircase conversion project in Deal property"
+    alt: "Completed staircase conversion project in a Deal, Kent property"
   },
   {
     title: "Bathroom Refurbishment",
     category: "Deal, Kent",
     img: "/assets/mark_stewart_bathroom_refurb_.jpeg",
-    alt: "Bathroom refurbishment completed in Deal home"
+    alt: "Bathroom refurbishment project completed in a home in Deal, Kent"
   },
   {
     title: "Full House Renovation",
     category: "Deal, Kent",
     img: "/assets/mark_steward_conversion_after.webp",
-    alt: "House renovation project completed in Deal"
+    alt: "Full house renovation project completed by local builders in Deal, Kent"
   }
 ];
 

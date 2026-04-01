@@ -131,7 +131,7 @@ export const AreasPage: React.FC = () => {
           </h2>
           <div className="mx-auto h-1 w-24 bg-brand-blue mb-6"></div>
           <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-            M E Stewart Building Contractors LTD provides comprehensive construction and refurbishment services to homeowners throughout the Deal area. Whether you're planning a home extension, renovation, new build, or commercial project in Deal, our experienced team delivers quality workmanship with extensive local knowledge of Deal properties.
+            M E Stewart Building Contractors Ltd provides comprehensive construction and refurbishment services to homeowners throughout the Deal area. Whether you're planning a home extension, renovation, new build, or commercial project in Deal, our experienced team delivers quality workmanship with extensive local knowledge of Deal properties.
           </p>
         </div>
       </section>

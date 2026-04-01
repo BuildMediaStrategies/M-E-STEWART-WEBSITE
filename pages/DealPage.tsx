@@ -35,30 +35,30 @@ export const DealPage: React.FC = () => {
             <p className="text-lg font-semibold uppercase tracking-wide">Local Builders in Deal</p>
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold uppercase mb-6 animate-fade-in">
-            Builders Based in Deal
+            Local Builders in Deal, Kent
           </h1>
           <div className="mx-auto h-1 w-32 bg-white mb-6"></div>
-          <p className="text-xl sm:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90">
-            28 years of quality building work across Deal and surrounding areas
-          </p>
+            <p className="text-xl sm:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90">
+              Nearly 30 years of extensions, renovations and building work across Deal and surrounding areas.
+            </p>
         </div>
       </div>
 
       <section className="py-20 px-6 sm:px-12 lg:px-24 bg-white">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-3xl sm:text-4xl font-bold uppercase text-brand-darkBlue mb-6 text-center">
-            Working All Over Deal
+            Building Work All Across Deal
           </h2>
           <div className="mx-auto h-1 w-24 bg-brand-blue mb-8"></div>
           <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
             <p>
-              We're based in Deal and work all over the town and nearby Dover — from refurbs and extensions to new builds. Whether you're in the town centre, near the seafront, or out towards Sholden and Walmer, we cover it all.
+              We are based in Deal and work right across the town and nearby Dover – from refurbs and extensions to new builds. Whether you&apos;re in the town centre, near the seafront, or out towards Sholden and Walmer, we can help.
             </p>
             <p>
-              We've been building in Deal for nearly three decades, so we know the local area inside out. From Victorian terraces to modern properties, we understand what works in Deal homes and how to get the best results.
+              After nearly three decades building in Deal, we know the housing stock and what tends to work best in local homes – from Victorian terraces to newer developments.
             </p>
             <p>
-              If you're in Deal or nearby towns, we'd be happy to chat about your project — no pressure, just friendly advice from local builders who care about getting it right.
+              If you&apos;re in Deal or a nearby town and planning a project, we&apos;d be happy to talk it through and give straightforward, practical advice.
             </p>
           </div>
         </div>
@@ -68,11 +68,11 @@ export const DealPage: React.FC = () => {
         <div className="mx-auto max-w-6xl">
           <div className="mb-16 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold uppercase text-brand-darkBlue mb-4">
-              What We Do in Deal
+              What We Do in Deal &amp; Nearby Areas
             </h2>
             <div className="mx-auto h-1 w-24 bg-brand-blue mb-6"></div>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              From small repairs to complete renovations, we handle all types of building work across Deal.
+              From small repairs to complete renovations, we handle all types of building work across Deal, Sholden, Walmer, Kingsdown and surrounding areas.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -125,7 +125,7 @@ export const DealPage: React.FC = () => {
               <div className="relative w-full aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
                 <img
                   src="/assets/mark_stewart_bathroom_refurb_.jpeg"
-                  alt="Deal builders - bathroom renovation project"
+                  alt="Completed bathroom refurbishment project in a family home in Deal, Kent"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -162,7 +162,7 @@ export const DealPage: React.FC = () => {
             </h2>
             <div className="mx-auto h-1 w-24 bg-brand-blue mb-8"></div>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              We serve all areas of Deal including the town centre, Mill Hill, Sholden, Upper Deal, and surrounding villages. We also cover nearby Dover, Walmer, St Margaret's, Sandwich, and the wider East Kent area.
+              We serve all areas of Deal including the town centre, Mill Hill, Sholden, Upper Deal, Walmer, Kingsdown and surrounding villages such as St Margaret&apos;s and Sandwich. We also cover nearby Dover and the wider East Kent area.
             </p>
             <div className="flex items-center justify-center gap-2 text-brand-blue">
               <MapPin size={24} />

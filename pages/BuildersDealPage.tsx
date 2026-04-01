@@ -8,14 +8,14 @@ export const BuildersDealPage: React.FC = () => {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'M E Stewart Building Contractors LTD - Professional builders in Deal, Kent. Expert home extensions, renovations & structural works serving all areas of Deal. Free quotes. Call 07885 930284');
+      metaDescription.setAttribute('content', 'M E Stewart Building Contractors Ltd - Professional builders in Deal, Kent. Expert home extensions, renovations & structural works serving all areas of Deal. Free quotes. Call 07885 930284');
     }
 
     const schema = {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "@id": "https://mestewartbuildingcontractorsltd.uk/#organization",
-      "name": "M E Stewart Building Contractors LTD",
+      "name": "M E Stewart Building Contractors Ltd",
       "image": "https://mestewartbuildingcontractorsltd.uk/assets/logo.png",
       "description": "Professional builders in Deal, Kent providing home extensions, renovations, structural works and general building services across all areas of Deal",
       "address": {
@@ -79,7 +79,7 @@ export const BuildersDealPage: React.FC = () => {
           {/* Opening Statement */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8 border-l-4 border-brand-blue">
             <p className="text-lg md:text-xl leading-relaxed text-gray-800 mb-4">
-              <strong className="text-brand-darkBlue">M E Stewart Building Contractors LTD</strong> are trusted local builders in Deal, Kent, providing professional home extensions, renovations and structural works across all areas of Deal including Walmer, Sholden, Upper Deal, and surrounding villages. Based in Deal, we support homeowners with reliable, high quality building services delivered by experienced local tradesmen.
+              <strong className="text-brand-darkBlue">M E Stewart Building Contractors Ltd</strong> are trusted local builders in Deal, Kent, providing professional home extensions, renovations and structural works across all areas of Deal including Walmer, Sholden, Upper Deal, and surrounding villages. Based in Deal, we support homeowners with reliable, high quality building services delivered by experienced local tradesmen.
             </p>
             <p className="text-sm text-gray-600 italic">
               <strong>Latest update:</strong> Now actively delivering building projects across Deal and all surrounding areas in 2026.
@@ -267,7 +267,7 @@ export const BuildersDealPage: React.FC = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-lg"
-                title="M E Stewart Building Contractors Location in Deal, Kent"
+                title="M E Stewart Building Contractors Ltd Location in Deal, Kent"
               ></iframe>
             </div>
           </section>
@@ -276,7 +276,7 @@ export const BuildersDealPage: React.FC = () => {
           <section className="bg-brand-darkBlue text-white rounded-lg shadow-xl p-8 md:p-12">
             <h2 className="text-3xl font-bold mb-6">Get Your Free Building Quote in Deal</h2>
             <p className="text-lg mb-8 leading-relaxed">
-              Ready to start your building project? Contact M E Stewart Building Contractors LTD today for a free, no-obligation quote. We serve homeowners throughout Deal, Kent and all surrounding areas.
+              Ready to start your building project? Contact M E Stewart Building Contractors Ltd today for a free, no-obligation quote. We serve homeowners throughout Deal, Kent and all surrounding areas.
             </p>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="flex items-center gap-3">

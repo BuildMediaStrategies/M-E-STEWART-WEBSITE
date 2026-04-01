@@ -28,7 +28,7 @@ export const PrivacyPolicyPage: React.FC = () => {
                 Introduction
               </h2>
               <p className="text-brand-slate leading-relaxed mb-4">
-                M E Stewart Building Contractors ("we", "our", "us") is committed to protecting and respecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+                M E Stewart Building Contractors Ltd ("we", "our", "us") is committed to protecting and respecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
               </p>
               <p className="text-brand-slate leading-relaxed">
                 We are registered in England and Wales and operate in compliance with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.
@@ -244,14 +244,14 @@ export const PrivacyPolicyPage: React.FC = () => {
               <div className="space-y-3">
                 <p>
                   <strong>Email:</strong>{' '}
-                  <a href="mailto:markstewart21@sky.com" className="underline hover:text-brand-blue transition-colors">
-                    markstewart21@sky.com
+                  <a href="mailto:enquiries@mestewartbuildingcontractorsltd.uk" className="underline hover:text-brand-blue transition-colors">
+                    enquiries@mestewartbuildingcontractorsltd.uk
                   </a>
                 </p>
                 <p>
                   <strong>Phone:</strong>{' '}
-                  <a href="tel:07738520388" className="underline hover:text-brand-blue transition-colors">
-                    07738 520388
+                  <a href="tel:07885930284" className="underline hover:text-brand-blue transition-colors">
+                    07885 930284
                   </a>
                 </p>
                 <p>

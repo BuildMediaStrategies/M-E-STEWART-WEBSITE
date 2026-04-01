@@ -5,11 +5,11 @@ import { ChevronRight } from 'lucide-react';
 const faqs = [
   {
     question: "What areas do you cover?",
-    answer: "We are based in Deal, Kent and serve the entire Deal area including Walmer, Sholden and surrounding residential zones."
+    answer: "We are based in Deal, Kent and serve the town and nearby East Kent areas."
   },
   {
     question: "How long does a typical project take?",
-    answer: "Project timelines vary depending on scope. Small renovations in Deal properties take 2-4 weeks, while larger builds can take 3-6 months."
+    answer: "Project timelines vary depending on scope. Smaller renovations typically take 2-4 weeks, while larger builds can take 3-6 months."
   },
   {
     question: "Do you provide free quotes?",
@@ -51,6 +51,9 @@ export const FAQPreview: React.FC = () => {
             View All FAQs
             <ChevronRight size={18} className="sm:w-5 sm:h-5 ml-2" />
           </Link>
+          <p className="mt-4 text-xs sm:text-sm text-brand-slate">
+            For more detail on local coverage, see our <Link to="/deal-areas" className="text-brand-blue font-semibold lg:hover:underline">Deal &amp; surrounding areas</Link> page.
+          </p>
         </div>
       </div>
     </section>

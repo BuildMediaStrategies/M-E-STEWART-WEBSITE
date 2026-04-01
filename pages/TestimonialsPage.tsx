@@ -3,7 +3,7 @@ import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "M E Stewart transformed our outdated Victorian property into a stunning modern home while preserving all the original character. Their attention to detail was exceptional, and they kept us informed every step of the way.",
+    quote: "M E Stewart Building Contractors Ltd transformed our outdated Victorian property into a stunning modern home while preserving all the original character. Their attention to detail was exceptional, and they kept us informed every step of the way.",
     client: "Sarah & David Thompson",
     location: "Dover, Kent",
     rating: 5
@@ -15,13 +15,13 @@ const testimonials = [
     rating: 5
   },
   {
-    quote: "From initial consultation to final handover, M E Stewart exceeded our expectations. They managed the entire project seamlessly, and their tradespeople were skilled, friendly, and always cleaned up at the end of each day.",
+    quote: "From initial consultation to final handover, M E Stewart Building Contractors Ltd exceeded our expectations. They managed the entire project seamlessly, and their tradespeople were skilled, friendly, and always cleaned up at the end of each day.",
     client: "Jennifer Clarke",
     location: "Walmer, Kent",
     rating: 5
   },
   {
-    quote: "As a business owner, I needed a contractor I could trust completely. M E Stewart delivered our commercial fit-out to an incredibly high standard. The project management was superb, minimizing disruption to our operations.",
+    quote: "As a business owner, I needed a contractor I could trust completely. M E Stewart Building Contractors Ltd delivered our commercial fit-out to an incredibly high standard. The project management was superb, minimising disruption to our operations.",
     client: "Robert Hayes",
     location: "Sandwich, Kent",
     rating: 5
@@ -33,7 +33,7 @@ const testimonials = [
     rating: 5
   },
   {
-    quote: "M E Stewart came highly recommended, and they lived up to every word. Their transparent pricing, reliable service, and exceptional craftsmanship make them stand out. We've already recommended them to friends and family.",
+    quote: "M E Stewart Building Contractors Ltd came highly recommended, and they lived up to every word. Their transparent pricing, reliable service, and exceptional craftsmanship make them stand out. We've already recommended them to friends and family.",
     client: "Catherine Williams",
     location: "Ramsgate, Kent",
     rating: 5
@@ -148,7 +148,7 @@ export const TestimonialsPage: React.FC = () => {
                     <div className="relative h-48">
                       <img
                         src={project.before}
-                        alt={`${project.title} - Before`}
+                        alt={`${project.title} before renovation carried out by local builders in East Kent`}
                         className="h-full w-full object-cover"
                       />
                       <div className="absolute bottom-2 left-2 bg-gray-800/80 text-white px-3 py-1 rounded text-xs font-bold uppercase">
@@ -158,7 +158,7 @@ export const TestimonialsPage: React.FC = () => {
                     <div className="relative h-48">
                       <img
                         src={project.after}
-                        alt={`${project.title} - After`}
+                        alt={`${project.title} after refurbishment project completed in East Kent`}
                         className="h-full w-full object-cover"
                       />
                       <div className="absolute bottom-2 right-2 bg-brand-blue text-white px-3 py-1 rounded text-xs font-bold uppercase">

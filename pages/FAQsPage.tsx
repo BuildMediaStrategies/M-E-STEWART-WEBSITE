@@ -7,11 +7,11 @@ const faqsData = [
     questions: [
       {
         question: "What areas do you cover?",
-        answer: "We're based in Deal and work throughout Dover, Sandwich, Walmer, St Margaret's, Canterbury, and surrounding areas across East Kent. We're happy to discuss projects outside these areas too."
+        answer: "We're based in Deal, Kent and typically work across East Kent including Deal, Dover, Ramsgate, Thanet and Canterbury. We're happy to discuss projects just outside these areas too."
       },
       {
         question: "How long have you been in business?",
-        answer: "M E Stewart has been providing quality building services across Deal, Dover, and Kent for 28 years, building a strong reputation for reliability and craftsmanship."
+        answer: "M E Stewart Building Contractors Ltd has been providing quality building services across Deal, Dover and Kent for 28 years, building a strong reputation for reliability and craftsmanship."
       },
       {
         question: "Do you provide free quotes?",
@@ -57,7 +57,7 @@ const faqsData = [
       },
       {
         question: "What happens if there are unexpected issues during construction?",
-        answer: "We conduct thorough site assessments to minimize surprises. If unexpected issues arise, we'll communicate immediately and provide transparent pricing for any additional work required."
+        answer: "We conduct thorough site assessments to minimise surprises. If unexpected issues arise, we'll communicate immediately and provide transparent pricing for any additional work required."
       },
       {
         question: "Can I make changes during the project?",

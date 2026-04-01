@@ -61,11 +61,11 @@ export const AboutPage: React.FC = () => {
       <div className="bg-gradient-to-br from-brand-darkBlue to-brand-blue text-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-24">
         <div className="mx-auto max-w-7xl text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold uppercase mb-4 sm:mb-6 animate-fade-in">
-            About M E Stewart Deal, Kent
+            About M E Stewart in Deal, Kent
           </h1>
           <div className="mx-auto h-1 w-24 sm:w-32 bg-white mb-4 sm:mb-6"></div>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90 px-4">
-            Deal-Based Building Contractors Serving the Entire Deal Area
+            Deal-based building contractors delivering reliable work for homeowners and businesses across the local area.
           </p>
         </div>
       </div>

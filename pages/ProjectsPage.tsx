@@ -21,8 +21,8 @@ const projects: Project[] = [
     afterImg: "/assets/before-after-living-room-refurb2.jpg",
     description: "Complete living room transformation in Deal featuring modern finishes, premium lighting, and high-quality craftsmanship. A stunning example of our attention to detail and interior renovation expertise.",
     isBeforeAfter: true,
-    beforeAlt: "Living room renovation before - Deal property",
-    afterAlt: "Living room renovation completed in Deal home"
+    beforeAlt: "Living room renovation before works in a family home in Deal, Kent",
+    afterAlt: "Living room renovation completed by local builders in Deal, Kent"
   },
   {
     title: "Staircase Renovation - Before & After",
@@ -31,42 +31,42 @@ const projects: Project[] = [
     afterImg: "/assets/mark_stewart_conversion_stairs_after.webp",
     description: "Complete staircase transformation from raw construction to elegant finished design in Deal. Features custom white painted posts, dark carpeted treads, and modern glass balustrades creating a sophisticated interior space.",
     isBeforeAfter: true,
-    beforeAlt: "Staircase conversion before - Deal property",
-    afterAlt: "Loft conversion staircase completed in Deal"
+    beforeAlt: "Staircase conversion before refurbishment at a property in Deal, Kent",
+    afterAlt: "Completed staircase conversion for a loft project in Deal, Kent"
   },
   {
     title: "Bathroom Refurbishment",
     location: "Deal, Kent",
     img: "/assets/mark_stewart_bathroom_refurb_.jpeg",
-    description: "Complete bathroom transformation in Deal featuring modern fixtures, premium tiling, elegant lighting, and high-quality finishes. A sophisticated space that combines style with functionality.",
-    alt: "Bathroom refurbishment completed in Deal"
+    description: "Complete bathroom transformation in Deal featuring modern fixtures, premium tiling, elegant lighting, and high-quality finishes. A sophisticated space that combines style with functionality for a local family home.",
+    alt: "Completed bathroom refurbishment project in a home in Deal, Kent"
   },
   {
     title: "Bathroom Refurbishment - Before & After",
     location: "Deal, Kent",
     beforeImg: "/assets/mark_stewart_house_refurb_image_before.jpeg",
     afterImg: "/assets/mark_stewart_house_refurb_after.jpeg",
-    description: "Complete bathroom refurbishment in Deal featuring new fixtures, tiling, and finishes.",
+    description: "Complete bathroom refurbishment in Deal featuring new fixtures, tiling, ventilation and modern finishes tailored to the homeowner's needs.",
     isBeforeAfter: true,
-    beforeAlt: "Bathroom refurbishment before - Deal home",
-    afterAlt: "Bathroom renovation completed in Deal property"
+    beforeAlt: "Bathroom refurbishment before works in a property in Deal, Kent",
+    afterAlt: "Bathroom renovation completed for a homeowner in Deal, Kent"
   },
   {
     title: "Luxury Kitchen & Living",
     location: "Deal, Kent",
     img: "/assets/mark_stewart_kitchen_refurb_.jpeg",
-    description: "High-end kitchen renovation in Deal with bespoke cabinetry, premium appliances, and designer finishes.",
-    alt: "Luxury kitchen renovation in Deal, Kent"
+    description: "High-end kitchen and living space renovation in Deal with bespoke cabinetry, premium appliances and designer finishes, creating a bright open-plan area for everyday family life.",
+    alt: "Luxury open-plan kitchen and living renovation completed in Deal, Kent"
   },
   {
     title: "Full House Renovation - Before & After",
     location: "Deal, Kent",
     beforeImg: "/assets/mark_stewart_conversion_job_before.webp",
     afterImg: "/assets/mark_steward_conversion_after.webp",
-    description: "Complete house renovation in Deal featuring updated finishes, fixtures, and interior improvements throughout.",
+    description: "Complete house renovation in Deal featuring updated finishes, fixtures and interior improvements throughout, transforming a dated property into a modern family home.",
     isBeforeAfter: true,
-    beforeAlt: "House renovation before - Deal property",
-    afterAlt: "Full house renovation completed in Deal"
+    beforeAlt: "House renovation before works at a property in Deal, Kent",
+    afterAlt: "Full house renovation completed by local builders in Deal, Kent"
   }
 ];
 

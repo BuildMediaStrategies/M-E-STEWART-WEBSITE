@@ -39,7 +39,7 @@ export const DoverPage: React.FC = () => {
           </h1>
           <div className="mx-auto h-1 w-32 bg-white mb-6"></div>
           <p className="text-xl sm:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90">
-            Professional building work across Dover and East Kent since 1995
+            Professional building work across Dover and East Kent since 1995.
           </p>
         </div>
       </div>
@@ -52,13 +52,14 @@ export const DoverPage: React.FC = () => {
           <div className="mx-auto h-1 w-24 bg-brand-blue mb-8"></div>
           <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
             <p>
-              We're based in Deal and work regularly throughout Dover — from refurbs and extensions to new builds. Whether you're in Dover town, up towards Whitfield, or out near River, we cover all areas.
+              We&apos;re based in Deal and work regularly throughout Dover – from refurbs and extensions to new builds. Whether you&apos;re in Dover town, up towards Whitfield, or out near River, we cover the main residential areas.
             </p>
             <p>
-              With nearly 30 years in the trade, we've completed hundreds of projects across Dover. We know the local building styles, understand planning requirements, and have great relationships with local suppliers — all of which helps your project run smoothly.
+              With nearly 30 years in the trade, we&apos;ve completed hundreds of projects across Dover and East Kent. We understand local building styles, planning expectations and supplier networks, which helps your project run smoothly.
             </p>
             <p>
-              If you're in Dover, Deal, or nearby towns, we'd be happy to chat. Learn more about our <Link to="/services" className="text-brand-blue font-semibold lg:hover:underline">home extensions in Dover</Link> or get in touch for a free quote.
+              If you&apos;re in Dover, Deal or a nearby town, we&apos;d be pleased to discuss your plans. Learn more about our{' '}
+              <Link to="/services" className="text-brand-blue font-semibold lg:hover:underline">home extension and renovation services</Link> or get in touch for a free quote.
             </p>
           </div>
         </div>
@@ -125,7 +126,7 @@ export const DoverPage: React.FC = () => {
               <div className="relative w-full aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
                 <img
                   src="/assets/mark_stewart_kitchen_refurb_.jpeg"
-                  alt="Dover builders - kitchen renovation project"
+                  alt="Completed kitchen renovation project for a home near Dover, Kent"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -143,7 +144,7 @@ export const DoverPage: React.FC = () => {
             <div className="mx-auto h-1 w-24 bg-brand-blue mb-8"></div>
             <div className="space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed italic">
-                "We had M E Stewart complete a full house renovation for us. The quality of work was outstanding and they were incredibly reliable throughout. Highly recommended for anyone in the Dover area."
+                "We had M E Stewart Building Contractors Ltd complete a full house renovation for us. The quality of work was outstanding and they were incredibly reliable throughout. Highly recommended for anyone in the Dover area."
               </p>
               <div className="border-t border-gray-200 pt-6">
                 <p className="font-bold text-brand-darkBlue">Michael & Claire</p>

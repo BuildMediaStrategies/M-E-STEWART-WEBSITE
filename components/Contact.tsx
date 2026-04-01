@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { HubSpotForm } from './HubSpotForm';
 
 export const Contact: React.FC = () => {
   return (
@@ -20,7 +21,7 @@ export const Contact: React.FC = () => {
           <div className="bg-brand-darkBlue text-white p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl flex flex-col justify-center h-full">
             <h2 className="text-2xl sm:text-3xl font-bold uppercase mb-4 sm:mb-6">Let's Build Together</h2>
             <p className="text-blue-200 mb-8 sm:mb-12 text-base sm:text-lg font-light">
-              Ready to start your next project? Contact M E Stewart today for a consultation. We pride ourselves on transparent communication and reliable service throughout Deal, Kent.
+              Ready to start your next project? Contact M E Stewart Building Contractors Ltd today for a consultation. We pride ourselves on transparent communication and reliable service throughout Deal, Kent.
             </p>
 
             <div className="space-y-6 sm:space-y-8">
@@ -50,10 +51,10 @@ export const Contact: React.FC = () => {
                   <MapPin size={20} className="sm:w-6 sm:h-6" aria-hidden="true" />
                 </div>
                 <div>
-                  <h4 className="font-bold uppercase text-base sm:text-lg">Visit Us</h4>
+                  <h4 className="font-bold uppercase text-base sm:text-lg">Based In</h4>
                   <address className="text-sm sm:text-base text-blue-200 not-italic">
-                    Betteshanger, Deal, Kent<br/>
-                    CT14 0LT
+                    Deal, Kent<br/>
+                    United Kingdom
                   </address>
                 </div>
               </div>
@@ -63,92 +64,7 @@ export const Contact: React.FC = () => {
           {/* Form */}
           <div className="bg-brand-grey text-brand-slate p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl shadow-lg border border-gray-100">
             <h3 className="text-xl sm:text-2xl font-bold uppercase text-brand-darkBlue mb-4 sm:mb-6">Send a Message</h3>
-            <form className="space-y-4 sm:space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-                <div>
-                  <label htmlFor="contact-first-name" className="block text-sm font-bold uppercase text-gray-500 mb-2">First Name *</label>
-                  <input
-                    type="text"
-                    id="contact-first-name"
-                    name="firstName"
-                    required
-                    className="w-full rounded-lg border-2 border-transparent bg-white px-4 py-3 focus:border-brand-blue focus:outline-none transition-colors shadow-sm"
-                    aria-required="true"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="contact-last-name" className="block text-sm font-bold uppercase text-gray-500 mb-2">Last Name *</label>
-                  <input
-                    type="text"
-                    id="contact-last-name"
-                    name="lastName"
-                    required
-                    className="w-full rounded-lg border-2 border-transparent bg-white px-4 py-3 focus:border-brand-blue focus:outline-none transition-colors shadow-sm"
-                    aria-required="true"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label htmlFor="contact-email" className="block text-sm font-bold uppercase text-gray-500 mb-2">Email Address *</label>
-                <input
-                  type="email"
-                  id="contact-email"
-                  name="email"
-                  required
-                  className="w-full rounded-lg border-2 border-transparent bg-white px-4 py-3 focus:border-brand-blue focus:outline-none transition-colors shadow-sm"
-                  aria-required="true"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="contact-project-type" className="block text-sm font-bold uppercase text-gray-500 mb-2">Project Type *</label>
-                <select
-                  id="contact-project-type"
-                  name="projectType"
-                  required
-                  className="w-full rounded-lg border-2 border-transparent bg-white px-4 py-3 focus:border-brand-blue focus:outline-none transition-colors shadow-sm"
-                  aria-required="true"
-                >
-                   <option value="">Select a project type</option>
-                   <option value="new-build">New Build</option>
-                   <option value="renovation">Renovation</option>
-                   <option value="extension">Extension</option>
-                   <option value="commercial">Commercial</option>
-                   <option value="other">Other</option>
-                </select>
-              </div>
-
-              <div>
-                <label htmlFor="contact-message" className="block text-sm font-bold uppercase text-gray-500 mb-2">Message *</label>
-                <textarea
-                  id="contact-message"
-                  name="message"
-                  rows={4}
-                  required
-                  className="w-full rounded-lg border-2 border-transparent bg-white px-4 py-3 focus:border-brand-blue focus:outline-none transition-colors resize-none shadow-sm"
-                  aria-required="true"
-                ></textarea>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <input
-                  type="checkbox"
-                  id="contact-privacy-consent"
-                  name="privacyConsent"
-                  required
-                  className="mt-1 w-4 h-4 text-brand-blue border-gray-300 rounded focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 cursor-pointer"
-                  aria-required="true"
-                />
-                <label htmlFor="contact-privacy-consent" className="text-sm text-brand-slate">
-                  I agree to the <a href="/privacy-policy" className="text-brand-blue underline hover:text-brand-darkBlue" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and consent to M E Stewart storing and processing my personal data to respond to my inquiry. *
-                </label>
-              </div>
-
-              <button type="submit" className="w-full bg-brand-blue text-white font-bold uppercase py-4 rounded-full lg:hover:bg-brand-darkBlue transition-colors tracking-widest shadow-lg">
-                Submit Inquiry
-              </button>
-            </form>
+            <HubSpotForm />
           </div>
 
         </div>
