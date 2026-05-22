@@ -70,8 +70,8 @@ export const ContactPage: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-bold uppercase text-xs sm:text-sm mb-1">Phone</p>
-                      <a href="tel:07885930284" className="text-sm sm:text-base lg:hover:text-brand-blue transition-colors">
-                        07885 930284
+                      <a href="tel:07738520388" className="text-sm sm:text-base lg:hover:text-brand-blue transition-colors">
+                        07738 520388
                       </a>
                     </div>
                   </div>

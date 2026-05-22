@@ -80,7 +80,7 @@ export const HouseExtensionsPage: React.FC = () => {
         '@type': 'LocalBusiness',
         name: 'M E Stewart Building Contractors Ltd',
         url: 'https://mestewartbuildingcontractorsltd.uk',
-        telephone: '07885930284',
+        telephone: '07738520388',
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Deal',

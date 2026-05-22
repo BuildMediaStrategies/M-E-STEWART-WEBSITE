@@ -8,7 +8,7 @@ export const BuildersWalmerPage: React.FC = () => {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional builders serving Walmer area of Deal, Kent. Extensions, loft conversions & home renovations. Based in Deal. Free quotes. Call 07885 930284');
+      metaDescription.setAttribute('content', 'Professional builders serving Walmer area of Deal, Kent. Extensions, loft conversions & home renovations. Based in Deal. Free quotes. Call 07738 520388');
     }
 
     const schema = {
@@ -30,7 +30,7 @@ export const BuildersWalmerPage: React.FC = () => {
         "latitude": "51.2038",
         "longitude": "1.3869"
       },
-      "telephone": "07885930284",
+      "telephone": "07738520388",
       "email": "enquiries@mestewartbuildingcontractorsltd.uk",
       "url": "https://mestewartbuildingcontractorsltd.uk",
       "priceRange": "££",

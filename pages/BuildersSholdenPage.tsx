@@ -8,7 +8,7 @@ export const BuildersSholdenPage: React.FC = () => {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Expert builders serving Sholden area of Deal, Kent. Home extensions, structural works & renovations. Based in Deal. Free quotes. Call 07885 930284');
+      metaDescription.setAttribute('content', 'Expert builders serving Sholden area of Deal, Kent. Home extensions, structural works & renovations. Based in Deal. Free quotes. Call 07738 520388');
     }
 
     const schema = {
@@ -30,7 +30,7 @@ export const BuildersSholdenPage: React.FC = () => {
         "latitude": "51.2156",
         "longitude": "1.4244"
       },
-      "telephone": "07885930284",
+      "telephone": "07738520388",
       "email": "enquiries@mestewartbuildingcontractorsltd.uk",
       "url": "https://mestewartbuildingcontractorsltd.uk",
       "priceRange": "££",

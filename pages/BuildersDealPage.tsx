@@ -8,7 +8,7 @@ export const BuildersDealPage: React.FC = () => {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'M E Stewart Building Contractors Ltd - Professional builders in Deal, Kent. Expert home extensions, renovations & structural works serving all areas of Deal. Free quotes. Call 07885 930284');
+      metaDescription.setAttribute('content', 'M E Stewart Building Contractors Ltd - Professional builders in Deal, Kent. Expert home extensions, renovations & structural works serving all areas of Deal. Free quotes. Call 07738 520388');
     }
 
     const schema = {
@@ -30,7 +30,7 @@ export const BuildersDealPage: React.FC = () => {
         "latitude": "51.2225",
         "longitude": "1.4017"
       },
-      "telephone": "07885930284",
+      "telephone": "07738520388",
       "email": "enquiries@mestewartbuildingcontractorsltd.uk",
       "url": "https://mestewartbuildingcontractorsltd.uk",
       "priceRange": "££",
@@ -283,7 +283,7 @@ export const BuildersDealPage: React.FC = () => {
                 <Phone className="w-6 h-6 text-brand-blue" />
                 <div>
                   <p className="text-sm text-gray-300">Phone</p>
-                  <a href="tel:07885930284" className="text-xl font-bold hover:text-brand-blue transition-colors">07885 930284</a>
+                  <a href="tel:07738520388" className="text-xl font-bold hover:text-brand-blue transition-colors">07738 520388</a>
                 </div>
               </div>
               <div className="flex items-center gap-3">

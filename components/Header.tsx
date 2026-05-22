@@ -72,12 +72,12 @@ export const Header: React.FC = () => {
               M E Stewart Building Contractors Ltd
             </span>
             <a
-              href="tel:07885930284"
+              href="tel:07738520388"
               className="flex items-center gap-1.5 sm:gap-2 font-semibold whitespace-nowrap lg:hover:text-brand-grey transition-colors"
-              aria-label="Call M E Stewart Building Contractors Ltd on 07885 930284"
+              aria-label="Call M E Stewart Building Contractors Ltd on 07738 520388"
             >
               <Phone className="w-3.5 h-3.5 md:w-4 md:h-4" aria-hidden="true" />
-              <span>07885 930284</span>
+              <span>07738 520388</span>
             </a>
             <span className="text-[10px] sm:text-xs text-brand-grey text-center sm:text-right">
               Serving Deal, Dover, Thanet &amp; Canterbury

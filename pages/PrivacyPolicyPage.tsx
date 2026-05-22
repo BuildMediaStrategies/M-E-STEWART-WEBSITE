@@ -250,8 +250,8 @@ export const PrivacyPolicyPage: React.FC = () => {
                 </p>
                 <p>
                   <strong>Phone:</strong>{' '}
-                  <a href="tel:07885930284" className="underline hover:text-brand-blue transition-colors">
-                    07885 930284
+                  <a href="tel:07738520388" className="underline hover:text-brand-blue transition-colors">
+                    07738 520388
                   </a>
                 </p>
                 <p>
