@@ -10,7 +10,7 @@ import {
   MapPin,
   Phone
 } from 'lucide-react';
-import { HubSpotForm } from '../components/HubSpotForm';
+import { ContactEmailPrompt } from '../components/ContactEmailPrompt';
 
 const galleryImages = [
   {
@@ -606,7 +606,7 @@ export const HouseExtensionsPage: React.FC = () => {
             </Link>
           </div>
           <div className="mt-8 bg-white text-brand-slate p-4 sm:p-6 rounded-2xl shadow-lg">
-            <HubSpotForm />
+            <ContactEmailPrompt />
           </div>
         </div>
       </section>

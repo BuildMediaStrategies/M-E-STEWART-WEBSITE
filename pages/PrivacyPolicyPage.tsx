@@ -244,8 +244,8 @@ export const PrivacyPolicyPage: React.FC = () => {
               <div className="space-y-3">
                 <p>
                   <strong>Email:</strong>{' '}
-                  <a href="mailto:enquiries@mestewartbuildingcontractorsltd.uk" className="underline hover:text-brand-blue transition-colors">
-                    enquiries@mestewartbuildingcontractorsltd.uk
+                  <a href="mailto:Markstewart21@sky.com" className="underline hover:text-brand-blue transition-colors">
+                    Markstewart21@sky.com
                   </a>
                 </p>
                 <p>

@@ -31,7 +31,7 @@ export const BuildersDealPage: React.FC = () => {
         "longitude": "1.4017"
       },
       "telephone": "07738520388",
-      "email": "enquiries@mestewartbuildingcontractorsltd.uk",
+      "email": "Markstewart21@sky.com",
       "url": "https://mestewartbuildingcontractorsltd.uk",
       "priceRange": "££",
       "areaServed": [
@@ -290,7 +290,7 @@ export const BuildersDealPage: React.FC = () => {
                 <Mail className="w-6 h-6 text-brand-blue" />
                 <div>
                   <p className="text-sm text-gray-300">Email</p>
-                  <a href="mailto:enquiries@mestewartbuildingcontractorsltd.uk" className="text-xl font-bold hover:text-brand-blue transition-colors break-all">enquiries@mestewartbuildingcontractorsltd.uk</a>
+                  <a href="mailto:Markstewart21@sky.com" className="text-xl font-bold hover:text-brand-blue transition-colors break-all">Markstewart21@sky.com</a>
                 </div>
               </div>
             </div>

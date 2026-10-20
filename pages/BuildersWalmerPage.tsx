@@ -31,7 +31,7 @@ export const BuildersWalmerPage: React.FC = () => {
         "longitude": "1.3869"
       },
       "telephone": "07738520388",
-      "email": "enquiries@mestewartbuildingcontractorsltd.uk",
+      "email": "Markstewart21@sky.com",
       "url": "https://mestewartbuildingcontractorsltd.uk",
       "priceRange": "££",
       "areaServed": {

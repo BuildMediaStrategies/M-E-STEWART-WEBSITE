@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
             <p className="text-white font-semibold mb-2">M E Stewart Building Contractors Ltd</p>
             <p className="text-white mb-1">Deal, Kent CT14</p>
             <p className="mb-1"><a href="tel:07738520388" className="hover:text-white transition-colors">Tel: 07738 520388</a></p>
-            <p className="mb-2"><a href="mailto:enquiries@mestewartbuildingcontractorsltd.uk" className="hover:text-white transition-colors">enquiries@mestewartbuildingcontractorsltd.uk</a></p>
+            <p className="mb-2"><a href="mailto:Markstewart21@sky.com" className="hover:text-white transition-colors">Markstewart21@sky.com</a></p>
             <p className="text-xs mb-2">Serving Deal, Dover, Ramsgate, Thanet & Canterbury, Kent</p>
             <p>&copy; {new Date().getFullYear()} M E Stewart Building Contractors Ltd. All rights reserved.</p>
             <nav className="flex gap-4 mt-2 justify-center md:justify-end" aria-label="Footer navigation">

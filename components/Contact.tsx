@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
-import { HubSpotForm } from './HubSpotForm';
+import { ContactEmailPrompt } from './ContactEmailPrompt';
 
 export const Contact: React.FC = () => {
   return (
@@ -42,7 +42,7 @@ export const Contact: React.FC = () => {
                 </div>
                 <div className="min-w-0">
                   <h4 className="font-bold uppercase text-base sm:text-lg">Email Us</h4>
-                  <a href="mailto:enquiries@mestewartbuildingcontractorsltd.uk" className="text-sm sm:text-base text-blue-200 hover:text-white transition-colors break-all">enquiries@mestewartbuildingcontractorsltd.uk</a>
+                  <a href="mailto:Markstewart21@sky.com" className="text-sm sm:text-base text-blue-200 hover:text-white transition-colors break-all">Markstewart21@sky.com</a>
                 </div>
               </div>
 
@@ -64,7 +64,7 @@ export const Contact: React.FC = () => {
           {/* Form */}
           <div className="bg-brand-grey text-brand-slate p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl shadow-lg border border-gray-100">
             <h3 className="text-xl sm:text-2xl font-bold uppercase text-brand-darkBlue mb-4 sm:mb-6">Send a Message</h3>
-            <HubSpotForm />
+            <ContactEmailPrompt />
           </div>
 
         </div>

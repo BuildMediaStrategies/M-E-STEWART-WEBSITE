@@ -1,39 +1,8 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
-import { HubSpotForm } from '../components/HubSpotForm';
+import React from 'react';
+import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { ContactEmailPrompt } from '../components/ContactEmailPrompt';
 
 export const ContactPage: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    service: '',
-    message: '',
-    privacyConsent: false
-  });
-
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const target = e.target;
-    const value = target.type === 'checkbox' ? (target as HTMLInputElement).checked : target.value;
-    const name = target.name;
-
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => {
-      setFormData({ name: '', email: '', phone: '', service: '', message: '', privacyConsent: false });
-      setSubmitted(false);
-    }, 3000);
-  };
-
   return (
     <div className="min-h-screen bg-slate-50 pt-20 sm:pt-24">
       <div className="bg-gradient-to-br from-brand-darkBlue to-brand-blue text-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-24">
@@ -56,7 +25,7 @@ export const ContactPage: React.FC = () => {
                 <h2 className="text-2xl sm:text-3xl font-bold uppercase text-brand-darkBlue mb-4 sm:mb-6">
                   Request Your Free Quote
                 </h2>
-                <HubSpotForm />
+                <ContactEmailPrompt />
               </div>
             </div>
 
@@ -82,8 +51,8 @@ export const ContactPage: React.FC = () => {
                     </div>
                     <div className="min-w-0">
                       <p className="font-bold uppercase text-xs sm:text-sm mb-1">Email</p>
-                      <a href="mailto:enquiries@mestewartbuildingcontractorsltd.uk" className="text-sm sm:text-base lg:hover:text-brand-blue transition-colors break-all">
-                        enquiries@mestewartbuildingcontractorsltd.uk
+                      <a href="mailto:Markstewart21@sky.com" className="text-sm sm:text-base lg:hover:text-brand-blue transition-colors break-all">
+                        Markstewart21@sky.com
                       </a>
                     </div>
                   </div>
